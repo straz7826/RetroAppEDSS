@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RetroApp
 //
-//  Created by ZachS on 2017-12-13.
-//  Copyright © 2017 ZachS. All rights reserved.
+//  Created by ICS 4 on 2017-12-13.
+//  Copyright © 2017 EDSS. All rights reserved.
 //
 
 import UIKit

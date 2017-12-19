@@ -12,6 +12,28 @@
 		B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489281FE166FF0098E8F1 /* Main.storyboard */; };
 		B334892C1FE166FF0098E8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B334892B1FE166FF0098E8F1 /* Assets.xcassets */; };
 		B334892F1FE166FF0098E8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334892D1FE166FF0098E8F1 /* LaunchScreen.storyboard */; };
+		B33489441FE16A250098E8F1 /* Wheel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489431FE16A250098E8F1 /* Wheel.storyboard */; };
+		B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489451FE16A380098E8F1 /* WheelVC.swift */; };
+		B33489481FE16A6D0098E8F1 /* PlayerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489471FE16A6D0098E8F1 /* PlayerProfileVC.swift */; };
+		B334894A1FE16A7C0098E8F1 /* PlayerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489491FE16A7C0098E8F1 /* PlayerProfile.storyboard */; };
+		B334894C1FE16A8D0098E8F1 /* Achievements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334894B1FE16A8D0098E8F1 /* Achievements.storyboard */; };
+		B334894E1FE16AA50098E8F1 /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334894D1FE16AA50098E8F1 /* AchievementsVC.swift */; };
+		B33489501FE16AC60098E8F1 /* LeaderBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334894F1FE16AC60098E8F1 /* LeaderBoard.storyboard */; };
+		B33489521FE16AD40098E8F1 /* LeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489511FE16AD40098E8F1 /* LeaderboardVC.swift */; };
+		B33489541FE16AE40098E8F1 /* SpaceInvaders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489531FE16AE40098E8F1 /* SpaceInvaders.storyboard */; };
+		B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489551FE16AFD0098E8F1 /* SpaceInvadersVC.swift */; };
+		B33489581FE16B100098E8F1 /* Pacman.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489571FE16B100098E8F1 /* Pacman.storyboard */; };
+		B334895A1FE16B1D0098E8F1 /* PacmanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489591FE16B1D0098E8F1 /* PacmanVC.swift */; };
+		B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */; };
+		B334895E1FE16B4B0098E8F1 /* Gauntlet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334895D1FE16B4B0098E8F1 /* Gauntlet.storyboard */; };
+		B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334895F1FE16B570098E8F1 /* Pong.storyboard */; };
+		B33489621FE16B630098E8F1 /* PongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489611FE16B630098E8F1 /* PongVC.swift */; };
+		B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489631FE16B6E0098E8F1 /* SnakeVC.swift */; };
+		B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489651FE16B770098E8F1 /* Snake.storyboard */; };
+		B39D05721FE401F50072031D /* ToWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05711FE401F50072031D /* ToWheel.swift */; };
+		B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05731FE402E70072031D /* ToPlayerProfile.swift */; };
+		B39D05761FE4033C0072031D /* ToAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05751FE4033C0072031D /* ToAchievements.swift */; };
+		B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05771FE403730072031D /* ToLeaderboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +44,28 @@
 		B334892B1FE166FF0098E8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B334892E1FE166FF0098E8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B33489301FE166FF0098E8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B33489431FE16A250098E8F1 /* Wheel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wheel.storyboard; sourceTree = "<group>"; };
+		B33489451FE16A380098E8F1 /* WheelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelVC.swift; sourceTree = "<group>"; };
+		B33489471FE16A6D0098E8F1 /* PlayerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfileVC.swift; sourceTree = "<group>"; };
+		B33489491FE16A7C0098E8F1 /* PlayerProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerProfile.storyboard; sourceTree = "<group>"; };
+		B334894B1FE16A8D0098E8F1 /* Achievements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievements.storyboard; sourceTree = "<group>"; };
+		B334894D1FE16AA50098E8F1 /* AchievementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
+		B334894F1FE16AC60098E8F1 /* LeaderBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeaderBoard.storyboard; sourceTree = "<group>"; };
+		B33489511FE16AD40098E8F1 /* LeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardVC.swift; sourceTree = "<group>"; };
+		B33489531FE16AE40098E8F1 /* SpaceInvaders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpaceInvaders.storyboard; sourceTree = "<group>"; };
+		B33489551FE16AFD0098E8F1 /* SpaceInvadersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceInvadersVC.swift; sourceTree = "<group>"; };
+		B33489571FE16B100098E8F1 /* Pacman.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pacman.storyboard; sourceTree = "<group>"; };
+		B33489591FE16B1D0098E8F1 /* PacmanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanVC.swift; sourceTree = "<group>"; };
+		B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GauntletVC.swift; sourceTree = "<group>"; };
+		B334895D1FE16B4B0098E8F1 /* Gauntlet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gauntlet.storyboard; sourceTree = "<group>"; };
+		B334895F1FE16B570098E8F1 /* Pong.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pong.storyboard; sourceTree = "<group>"; };
+		B33489611FE16B630098E8F1 /* PongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongVC.swift; sourceTree = "<group>"; };
+		B33489631FE16B6E0098E8F1 /* SnakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeVC.swift; sourceTree = "<group>"; };
+		B33489651FE16B770098E8F1 /* Snake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snake.storyboard; sourceTree = "<group>"; };
+		B39D05711FE401F50072031D /* ToWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWheel.swift; sourceTree = "<group>"; };
+		B39D05731FE402E70072031D /* ToPlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPlayerProfile.swift; sourceTree = "<group>"; };
+		B39D05751FE4033C0072031D /* ToAchievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAchievements.swift; sourceTree = "<group>"; };
+		B39D05771FE403730072031D /* ToLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLeaderboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +98,108 @@
 		B33489231FE166FF0098E8F1 /* RetroApp */ = {
 			isa = PBXGroup;
 			children = (
-				B33489241FE166FF0098E8F1 /* AppDelegate.swift */,
-				B33489261FE166FF0098E8F1 /* ViewController.swift */,
-				B33489281FE166FF0098E8F1 /* Main.storyboard */,
+				B33489421FE169ED0098E8F1 /* Wheel */,
+				B33489411FE169DB0098E8F1 /* Player Profile */,
+				B33489401FE169920098E8F1 /* Achievements */,
+				B334893F1FE168500098E8F1 /* Leaderboard */,
+				B334893D1FE168170098E8F1 /* Space Invaders */,
+				B334893B1FE167E20098E8F1 /* Pacman */,
+				B334893A1FE167D80098E8F1 /* Gauntlet */,
+				B33489381FE167BF0098E8F1 /* Pong */,
+				B33489371FE167B00098E8F1 /* Snake */,
 				B334892B1FE166FF0098E8F1 /* Assets.xcassets */,
+				B33489241FE166FF0098E8F1 /* AppDelegate.swift */,
+				B33489281FE166FF0098E8F1 /* Main.storyboard */,
+				B39D05711FE401F50072031D /* ToWheel.swift */,
+				B39D05731FE402E70072031D /* ToPlayerProfile.swift */,
+				B39D05751FE4033C0072031D /* ToAchievements.swift */,
+				B39D05771FE403730072031D /* ToLeaderboard.swift */,
+				B33489261FE166FF0098E8F1 /* ViewController.swift */,
 				B334892D1FE166FF0098E8F1 /* LaunchScreen.storyboard */,
 				B33489301FE166FF0098E8F1 /* Info.plist */,
 			);
 			path = RetroApp;
+			sourceTree = "<group>";
+		};
+		B33489371FE167B00098E8F1 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				B33489651FE16B770098E8F1 /* Snake.storyboard */,
+				B33489631FE16B6E0098E8F1 /* SnakeVC.swift */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		B33489381FE167BF0098E8F1 /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				B334895F1FE16B570098E8F1 /* Pong.storyboard */,
+				B33489611FE16B630098E8F1 /* PongVC.swift */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		B334893A1FE167D80098E8F1 /* Gauntlet */ = {
+			isa = PBXGroup;
+			children = (
+				B334895D1FE16B4B0098E8F1 /* Gauntlet.storyboard */,
+				B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */,
+			);
+			path = Gauntlet;
+			sourceTree = "<group>";
+		};
+		B334893B1FE167E20098E8F1 /* Pacman */ = {
+			isa = PBXGroup;
+			children = (
+				B33489571FE16B100098E8F1 /* Pacman.storyboard */,
+				B33489591FE16B1D0098E8F1 /* PacmanVC.swift */,
+			);
+			path = Pacman;
+			sourceTree = "<group>";
+		};
+		B334893D1FE168170098E8F1 /* Space Invaders */ = {
+			isa = PBXGroup;
+			children = (
+				B33489531FE16AE40098E8F1 /* SpaceInvaders.storyboard */,
+				B33489551FE16AFD0098E8F1 /* SpaceInvadersVC.swift */,
+			);
+			path = "Space Invaders";
+			sourceTree = "<group>";
+		};
+		B334893F1FE168500098E8F1 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				B334894F1FE16AC60098E8F1 /* LeaderBoard.storyboard */,
+				B33489511FE16AD40098E8F1 /* LeaderboardVC.swift */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		B33489401FE169920098E8F1 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				B334894B1FE16A8D0098E8F1 /* Achievements.storyboard */,
+				B334894D1FE16AA50098E8F1 /* AchievementsVC.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		B33489411FE169DB0098E8F1 /* Player Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B33489491FE16A7C0098E8F1 /* PlayerProfile.storyboard */,
+				B33489471FE16A6D0098E8F1 /* PlayerProfileVC.swift */,
+			);
+			path = "Player Profile";
+			sourceTree = "<group>";
+		};
+		B33489421FE169ED0098E8F1 /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				B33489431FE16A250098E8F1 /* Wheel.storyboard */,
+				B33489451FE16A380098E8F1 /* WheelVC.swift */,
+			);
+			path = Wheel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +261,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33489441FE16A250098E8F1 /* Wheel.storyboard in Resources */,
 				B334892F1FE166FF0098E8F1 /* LaunchScreen.storyboard in Resources */,
+				B334895E1FE16B4B0098E8F1 /* Gauntlet.storyboard in Resources */,
+				B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */,
+				B33489501FE16AC60098E8F1 /* LeaderBoard.storyboard in Resources */,
+				B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */,
+				B334894C1FE16A8D0098E8F1 /* Achievements.storyboard in Resources */,
 				B334892C1FE166FF0098E8F1 /* Assets.xcassets in Resources */,
+				B33489581FE16B100098E8F1 /* Pacman.storyboard in Resources */,
 				B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */,
+				B334894A1FE16A7C0098E8F1 /* PlayerProfile.storyboard in Resources */,
+				B33489541FE16AE40098E8F1 /* SpaceInvaders.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +283,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33489521FE16AD40098E8F1 /* LeaderboardVC.swift in Sources */,
+				B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */,
 				B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */,
+				B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */,
+				B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */,
+				B39D05721FE401F50072031D /* ToWheel.swift in Sources */,
+				B334895A1FE16B1D0098E8F1 /* PacmanVC.swift in Sources */,
+				B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */,
 				B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */,
+				B33489481FE16A6D0098E8F1 /* PlayerProfileVC.swift in Sources */,
+				B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */,
+				B33489621FE16B630098E8F1 /* PongVC.swift in Sources */,
+				B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */,
+				B39D05761FE4033C0072031D /* ToAchievements.swift in Sources */,
+				B334894E1FE16AA50098E8F1 /* AchievementsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +435,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82BQ2MD3YW;
 				INFOPLIST_FILE = RetroApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZS.RetroApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +451,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82BQ2MD3YW;
 				INFOPLIST_FILE = RetroApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZS.RetroApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
