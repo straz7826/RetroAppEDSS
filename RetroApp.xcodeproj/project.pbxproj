@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E651FEBEEA8005C0462 /* GameOverScene.swift */; };
+		6B676E681FEBEEF2005C0462 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E671FEBEEF2005C0462 /* GameScene.swift */; };
 		B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489241FE166FF0098E8F1 /* AppDelegate.swift */; };
 		B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489261FE166FF0098E8F1 /* ViewController.swift */; };
 		B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489281FE166FF0098E8F1 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B676E651FEBEEA8005C0462 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		6B676E671FEBEEF2005C0462 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B33489211FE166FF0098E8F1 /* RetroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33489241FE166FF0098E8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B33489261FE166FF0098E8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			children = (
 				B33489531FE16AE40098E8F1 /* SpaceInvaders.storyboard */,
 				B33489551FE16AFD0098E8F1 /* SpaceInvadersVC.swift */,
+				6B676E671FEBEEF2005C0462 /* GameScene.swift */,
+				6B676E651FEBEEA8005C0462 /* GameOverScene.swift */,
 			);
 			path = "Space Invaders";
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			files = (
 				B33489521FE16AD40098E8F1 /* LeaderboardVC.swift in Sources */,
 				B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */,
+				6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */,
 				B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */,
 				B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */,
 				B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */,
@@ -293,6 +300,7 @@
 				B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */,
 				B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */,
 				B33489481FE16A6D0098E8F1 /* PlayerProfileVC.swift in Sources */,
+				6B676E681FEBEEF2005C0462 /* GameScene.swift in Sources */,
 				B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */,
 				B33489621FE16B630098E8F1 /* PongVC.swift in Sources */,
 				B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */,
