@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039065D7200659BC00AD7FF0 /* Gauntlet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B2B200651DF0043867A /* Gauntlet.storyboard */; };
+		03E27B172006513A0043867A /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B152006513A0043867A /* Images */; };
+		03E27B182006513A0043867A /* Sound Effects in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B162006513A0043867A /* Sound Effects */; };
+		03E27B232006516A0043867A /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B1A2006516A0043867A /* CharacterSelectionViewController.swift */; };
+		03E27B242006516A0043867A /* GauntletGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B1B2006516A0043867A /* GauntletGameScene.swift */; };
+		03E27B252006516A0043867A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B1C2006516A0043867A /* TutorialViewController.swift */; };
+		03E27B262006516A0043867A /* Universal Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B1D2006516A0043867A /* Universal Variables.swift */; };
+		03E27B272006516A0043867A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B1E2006516A0043867A /* Actions.sks */; };
+		03E27B282006516A0043867A /* scoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B1F2006516A0043867A /* scoreViewController.swift */; };
+		03E27B292006516A0043867A /* GauntletGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B202006516A0043867A /* GauntletGameScene.sks */; };
+		03E27B2A2006516A0043867A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B212006516A0043867A /* GameViewController.swift */; };
 		6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E651FEBEEA8005C0462 /* GameOverScene.swift */; };
 		6B676E681FEBEEF2005C0462 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E671FEBEEF2005C0462 /* GameScene.swift */; };
 		8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03112004FAAA00A4D87A /* Actions.sks */; };
@@ -16,11 +27,6 @@
 		8A2C031A2004FB2500A4D87A /* PongGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03162004FB2500A4D87A /* PongGameScene.sks */; };
 		8A2C031E2004FB3B00A4D87A /* PongGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C031B2004FB3B00A4D87A /* PongGameViewController.swift */; };
 		8A2C03202004FB3B00A4D87A /* paddle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C031D2004FB3B00A4D87A /* paddle2.swift */; };
-		8A2C03222004FBF600A4D87A /* ping-pong-ball_CT.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03212004FBF600A4D87A /* ping-pong-ball_CT.png */; };
-		8A2C03242004FC0200A4D87A /* Super Mario - Question Mark Block.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03232004FC0200A4D87A /* Super Mario - Question Mark Block.jpg */; };
-		8A2C03262004FC1200A4D87A /* export (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03252004FC1200A4D87A /* export (2).png */; };
-		8A2C03282004FC1D00A4D87A /* fullsizeoutput_5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03272004FC1D00A4D87A /* fullsizeoutput_5.jpeg */; };
-		8A2C032A2004FC2800A4D87A /* fullsizeoutput_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03292004FC2800A4D87A /* fullsizeoutput_2.jpeg */; };
 		B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489241FE166FF0098E8F1 /* AppDelegate.swift */; };
 		B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489261FE166FF0098E8F1 /* ViewController.swift */; };
 		B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489281FE166FF0098E8F1 /* Main.storyboard */; };
@@ -39,7 +45,6 @@
 		B33489581FE16B100098E8F1 /* Pacman.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489571FE16B100098E8F1 /* Pacman.storyboard */; };
 		B334895A1FE16B1D0098E8F1 /* PacmanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489591FE16B1D0098E8F1 /* PacmanVC.swift */; };
 		B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */; };
-		B334895E1FE16B4B0098E8F1 /* Gauntlet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334895D1FE16B4B0098E8F1 /* Gauntlet.storyboard */; };
 		B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334895F1FE16B570098E8F1 /* Pong.storyboard */; };
 		B33489621FE16B630098E8F1 /* PongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489611FE16B630098E8F1 /* PongVC.swift */; };
 		B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489631FE16B6E0098E8F1 /* SnakeVC.swift */; };
@@ -51,6 +56,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03E27B152006513A0043867A /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		03E27B162006513A0043867A /* Sound Effects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Sound Effects"; sourceTree = "<group>"; };
+		03E27B1A2006516A0043867A /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
+		03E27B1B2006516A0043867A /* GauntletGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GauntletGameScene.swift; sourceTree = "<group>"; };
+		03E27B1C2006516A0043867A /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		03E27B1D2006516A0043867A /* Universal Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Universal Variables.swift"; sourceTree = "<group>"; };
+		03E27B1E2006516A0043867A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		03E27B1F2006516A0043867A /* scoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scoreViewController.swift; sourceTree = "<group>"; };
+		03E27B202006516A0043867A /* GauntletGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GauntletGameScene.sks; sourceTree = "<group>"; };
+		03E27B212006516A0043867A /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		03E27B2B200651DF0043867A /* Gauntlet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gauntlet.storyboard; sourceTree = "<group>"; };
 		6B676E651FEBEEA8005C0462 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		6B676E671FEBEEF2005C0462 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8A2C03112004FAAA00A4D87A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -60,11 +76,6 @@
 		8A2C03162004FB2500A4D87A /* PongGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PongGameScene.sks; sourceTree = "<group>"; };
 		8A2C031B2004FB3B00A4D87A /* PongGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PongGameViewController.swift; sourceTree = "<group>"; };
 		8A2C031D2004FB3B00A4D87A /* paddle2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paddle2.swift; sourceTree = "<group>"; };
-		8A2C03212004FBF600A4D87A /* ping-pong-ball_CT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ping-pong-ball_CT.png"; path = "../../../../../Downloads/ping-pong-ball_CT.png"; sourceTree = "<group>"; };
-		8A2C03232004FC0200A4D87A /* Super Mario - Question Mark Block.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Super Mario - Question Mark Block.jpg"; path = "../../../../../Downloads/Super Mario - Question Mark Block.jpg"; sourceTree = "<group>"; };
-		8A2C03252004FC1200A4D87A /* export (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "export (2).png"; path = "../../../../../Downloads/export (2).png"; sourceTree = "<group>"; };
-		8A2C03272004FC1D00A4D87A /* fullsizeoutput_5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fullsizeoutput_5.jpeg; path = "../../../../../Pictures/Photos Library.photoslibrary/resources/media/version/00/00/fullsizeoutput_5.jpeg"; sourceTree = "<group>"; };
-		8A2C03292004FC2800A4D87A /* fullsizeoutput_2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fullsizeoutput_2.jpeg; path = "../../../../../Pictures/Photos Library.photoslibrary/resources/media/version/00/00/fullsizeoutput_2.jpeg"; sourceTree = "<group>"; };
 		B33489211FE166FF0098E8F1 /* RetroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33489241FE166FF0098E8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B33489261FE166FF0098E8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +96,6 @@
 		B33489571FE16B100098E8F1 /* Pacman.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pacman.storyboard; sourceTree = "<group>"; };
 		B33489591FE16B1D0098E8F1 /* PacmanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanVC.swift; sourceTree = "<group>"; };
 		B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GauntletVC.swift; sourceTree = "<group>"; };
-		B334895D1FE16B4B0098E8F1 /* Gauntlet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gauntlet.storyboard; sourceTree = "<group>"; };
 		B334895F1FE16B570098E8F1 /* Pong.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pong.storyboard; sourceTree = "<group>"; };
 		B33489611FE16B630098E8F1 /* PongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongVC.swift; sourceTree = "<group>"; };
 		B33489631FE16B6E0098E8F1 /* SnakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeVC.swift; sourceTree = "<group>"; };
@@ -161,11 +171,6 @@
 		B33489381FE167BF0098E8F1 /* Pong */ = {
 			isa = PBXGroup;
 			children = (
-				8A2C03292004FC2800A4D87A /* fullsizeoutput_2.jpeg */,
-				8A2C03272004FC1D00A4D87A /* fullsizeoutput_5.jpeg */,
-				8A2C03252004FC1200A4D87A /* export (2).png */,
-				8A2C03232004FC0200A4D87A /* Super Mario - Question Mark Block.jpg */,
-				8A2C03212004FBF600A4D87A /* ping-pong-ball_CT.png */,
 				8A2C031B2004FB3B00A4D87A /* PongGameViewController.swift */,
 				8A2C031D2004FB3B00A4D87A /* paddle2.swift */,
 				8A2C03112004FAAA00A4D87A /* Actions.sks */,
@@ -182,8 +187,18 @@
 		B334893A1FE167D80098E8F1 /* Gauntlet */ = {
 			isa = PBXGroup;
 			children = (
-				B334895D1FE16B4B0098E8F1 /* Gauntlet.storyboard */,
+				03E27B1E2006516A0043867A /* Actions.sks */,
+				03E27B1A2006516A0043867A /* CharacterSelectionViewController.swift */,
+				03E27B202006516A0043867A /* GauntletGameScene.sks */,
+				03E27B1B2006516A0043867A /* GauntletGameScene.swift */,
+				03E27B212006516A0043867A /* GameViewController.swift */,
+				03E27B1F2006516A0043867A /* scoreViewController.swift */,
+				03E27B1C2006516A0043867A /* TutorialViewController.swift */,
+				03E27B2B200651DF0043867A /* Gauntlet.storyboard */,
 				B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */,
+				03E27B1D2006516A0043867A /* Universal Variables.swift */,
+				03E27B152006513A0043867A /* Images */,
+				03E27B162006513A0043867A /* Sound Effects */,
 			);
 			path = Gauntlet;
 			sourceTree = "<group>";
@@ -303,22 +318,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E27B182006513A0043867A /* Sound Effects in Resources */,
 				B33489441FE16A250098E8F1 /* Wheel.storyboard in Resources */,
 				8A2C031A2004FB2500A4D87A /* PongGameScene.sks in Resources */,
-				8A2C03262004FC1200A4D87A /* export (2).png in Resources */,
+				03E27B292006516A0043867A /* GauntletGameScene.sks in Resources */,
 				B334892F1FE166FF0098E8F1 /* LaunchScreen.storyboard in Resources */,
-				B334895E1FE16B4B0098E8F1 /* Gauntlet.storyboard in Resources */,
-				8A2C032A2004FC2800A4D87A /* fullsizeoutput_2.jpeg in Resources */,
+				039065D7200659BC00AD7FF0 /* Gauntlet.storyboard in Resources */,
 				B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */,
-				8A2C03222004FBF600A4D87A /* ping-pong-ball_CT.png in Resources */,
 				B33489501FE16AC60098E8F1 /* LeaderBoard.storyboard in Resources */,
-				8A2C03242004FC0200A4D87A /* Super Mario - Question Mark Block.jpg in Resources */,
-				8A2C03282004FC1D00A4D87A /* fullsizeoutput_5.jpeg in Resources */,
 				B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */,
 				B334894C1FE16A8D0098E8F1 /* Achievements.storyboard in Resources */,
 				8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */,
 				B334892C1FE166FF0098E8F1 /* Assets.xcassets in Resources */,
 				B33489581FE16B100098E8F1 /* Pacman.storyboard in Resources */,
+				03E27B272006516A0043867A /* Actions.sks in Resources */,
+				03E27B172006513A0043867A /* Images in Resources */,
 				B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */,
 				B334894A1FE16A7C0098E8F1 /* PlayerProfile.storyboard in Resources */,
 				B33489541FE16AE40098E8F1 /* SpaceInvaders.storyboard in Resources */,
@@ -333,12 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E27B2A2006516A0043867A /* GameViewController.swift in Sources */,
 				8A2C031E2004FB3B00A4D87A /* PongGameViewController.swift in Sources */,
 				B33489521FE16AD40098E8F1 /* LeaderboardVC.swift in Sources */,
 				8A2C03182004FB2500A4D87A /* PongGameScene.swift in Sources */,
 				8A2C03202004FB3B00A4D87A /* paddle2.swift in Sources */,
+				03E27B232006516A0043867A /* CharacterSelectionViewController.swift in Sources */,
 				B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */,
+				03E27B282006516A0043867A /* scoreViewController.swift in Sources */,
 				6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */,
+				03E27B262006516A0043867A /* Universal Variables.swift in Sources */,
 				B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */,
 				B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */,
 				8A2C03172004FB2500A4D87A /* TitleScene.swift in Sources */,
@@ -348,7 +366,9 @@
 				B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */,
 				B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */,
 				B33489481FE16A6D0098E8F1 /* PlayerProfileVC.swift in Sources */,
+				03E27B252006516A0043867A /* TutorialViewController.swift in Sources */,
 				6B676E681FEBEEF2005C0462 /* GameScene.swift in Sources */,
+				03E27B242006516A0043867A /* GauntletGameScene.swift in Sources */,
 				B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */,
 				B33489621FE16B630098E8F1 /* PongVC.swift in Sources */,
 				B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */,
