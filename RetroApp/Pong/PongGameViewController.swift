@@ -1,38 +1,38 @@
 //
-//  PongVC.swift
-//  RetroApp
+//  GameViewController.swift
+//  TitleScreen2
 //
-//  Created by ICS 4 on 2017-12-13.
-//  Copyright © 2017 EDSS. All rights reserved.
+//  Created by Ashley Bowman on 2017-12-15.
+//  Copyright © 2017 Bowman A. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import SpriteKit
 import GameplayKit
-import Foundation
 
-class PongVC: UIViewController {
+class PongGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        if let view = self.view as! SKView? {
+        
+        if let view2 = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "TitleScene") {
+            if let scene = SKScene(fileNamed: "PongGameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
                 // Present the scene
-                view.presentScene(scene)
+                view2.presentScene(scene)
             }
             
-            view.ignoresSiblingOrder = true
+            view2.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view2.showsFPS = true
+            view2.showsNodeCount = true
         }
-        
     }
+    
     override var shouldAutorotate: Bool {
         return true
     }
@@ -45,17 +45,12 @@ class PongVC: UIViewController {
         }
     }
     
-    @IBAction func back(_ sender: UIButton) {
-        let nextScene: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu") as UIViewController
-        self.present(nextScene, animated: false, completion: nil)
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Release any cached data, images, etc that aren't in use.
     }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-    
 }
