@@ -24,7 +24,7 @@ class SpaceInvadersVC: UIViewController {
         skView.ignoresSiblingOrder = true
         
         // Create and configure the scene.
-        let scene = GameScene(size: skView.frame.size)
+        let scene = SpaceGameScene(size: skView.frame.size)
         skView.presentScene(scene)
         
         // Pause the view (and thus the game) when the app is interrupted or backgrounded

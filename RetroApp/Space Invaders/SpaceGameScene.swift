@@ -13,7 +13,7 @@ import CoreMotion
 
 var tapQueue = [Int]()
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
     
     let kMinInvaderBottomHeight: Float = 32.0
     var gameEnding: Bool = false

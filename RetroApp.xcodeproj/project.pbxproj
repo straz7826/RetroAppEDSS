@@ -19,7 +19,7 @@
 		03E27B292006516A0043867A /* GauntletGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B202006516A0043867A /* GauntletGameScene.sks */; };
 		03E27B2A2006516A0043867A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B212006516A0043867A /* GameViewController.swift */; };
 		6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E651FEBEEA8005C0462 /* GameOverScene.swift */; };
-		6B676E681FEBEEF2005C0462 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E671FEBEEF2005C0462 /* GameScene.swift */; };
+		6B676E681FEBEEF2005C0462 /* SpaceGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E671FEBEEF2005C0462 /* SpaceGameScene.swift */; };
 		8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03112004FAAA00A4D87A /* Actions.sks */; };
 		8A2C03172004FB2500A4D87A /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C03132004FB2500A4D87A /* TitleScene.swift */; };
 		8A2C03182004FB2500A4D87A /* PongGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C03142004FB2500A4D87A /* PongGameScene.swift */; };
@@ -49,6 +49,19 @@
 		B33489621FE16B630098E8F1 /* PongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489611FE16B630098E8F1 /* PongVC.swift */; };
 		B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489631FE16B6E0098E8F1 /* SnakeVC.swift */; };
 		B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489651FE16B770098E8F1 /* Snake.storyboard */; };
+		B3439B4A2007A53D0055E70F /* BlinkAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B3D2007A53B0055E70F /* BlinkAI.swift */; };
+		B3439B4B2007A53D0055E70F /* grid detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B3E2007A53B0055E70F /* grid detection.swift */; };
+		B3439B4C2007A53D0055E70F /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B3F2007A53B0055E70F /* Move.swift */; };
+		B3439B4D2007A53D0055E70F /* Center of tile function.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B402007A53B0055E70F /* Center of tile function.swift */; };
+		B3439B4E2007A53D0055E70F /* ClydeAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B412007A53B0055E70F /* ClydeAI.swift */; };
+		B3439B4F2007A53D0055E70F /* Grid Detection X.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B422007A53C0055E70F /* Grid Detection X.swift */; };
+		B3439B502007A53D0055E70F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B432007A53C0055E70F /* Map.swift */; };
+		B3439B512007A53D0055E70F /* PacmanGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B442007A53C0055E70F /* PacmanGameScene.swift */; };
+		B3439B522007A53D0055E70F /* InkyAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B452007A53C0055E70F /* InkyAI.swift */; };
+		B3439B532007A53D0055E70F /* Grid Detection Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B462007A53C0055E70F /* Grid Detection Y.swift */; };
+		B3439B542007A53D0055E70F /* PacmanGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3439B472007A53C0055E70F /* PacmanGameScene.sks */; };
+		B3439B552007A53D0055E70F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3439B482007A53C0055E70F /* Actions.sks */; };
+		B3439B562007A53D0055E70F /* PinkyAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B492007A53C0055E70F /* PinkyAI.swift */; };
 		B39D05721FE401F50072031D /* ToWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05711FE401F50072031D /* ToWheel.swift */; };
 		B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05731FE402E70072031D /* ToPlayerProfile.swift */; };
 		B39D05761FE4033C0072031D /* ToAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05751FE4033C0072031D /* ToAchievements.swift */; };
@@ -68,7 +81,7 @@
 		03E27B212006516A0043867A /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		03E27B2B200651DF0043867A /* Gauntlet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gauntlet.storyboard; sourceTree = "<group>"; };
 		6B676E651FEBEEA8005C0462 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
-		6B676E671FEBEEF2005C0462 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6B676E671FEBEEF2005C0462 /* SpaceGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceGameScene.swift; sourceTree = "<group>"; };
 		8A2C03112004FAAA00A4D87A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		8A2C03132004FB2500A4D87A /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
 		8A2C03142004FB2500A4D87A /* PongGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PongGameScene.swift; sourceTree = "<group>"; };
@@ -100,6 +113,19 @@
 		B33489611FE16B630098E8F1 /* PongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongVC.swift; sourceTree = "<group>"; };
 		B33489631FE16B6E0098E8F1 /* SnakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeVC.swift; sourceTree = "<group>"; };
 		B33489651FE16B770098E8F1 /* Snake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snake.storyboard; sourceTree = "<group>"; };
+		B3439B3D2007A53B0055E70F /* BlinkAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkAI.swift; sourceTree = "<group>"; };
+		B3439B3E2007A53B0055E70F /* grid detection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "grid detection.swift"; sourceTree = "<group>"; };
+		B3439B3F2007A53B0055E70F /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		B3439B402007A53B0055E70F /* Center of tile function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Center of tile function.swift"; sourceTree = "<group>"; };
+		B3439B412007A53B0055E70F /* ClydeAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClydeAI.swift; sourceTree = "<group>"; };
+		B3439B422007A53C0055E70F /* Grid Detection X.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grid Detection X.swift"; sourceTree = "<group>"; };
+		B3439B432007A53C0055E70F /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		B3439B442007A53C0055E70F /* PacmanGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacmanGameScene.swift; sourceTree = "<group>"; };
+		B3439B452007A53C0055E70F /* InkyAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InkyAI.swift; sourceTree = "<group>"; };
+		B3439B462007A53C0055E70F /* Grid Detection Y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grid Detection Y.swift"; sourceTree = "<group>"; };
+		B3439B472007A53C0055E70F /* PacmanGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PacmanGameScene.sks; sourceTree = "<group>"; };
+		B3439B482007A53C0055E70F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		B3439B492007A53C0055E70F /* PinkyAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkyAI.swift; sourceTree = "<group>"; };
 		B39D05711FE401F50072031D /* ToWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToWheel.swift; sourceTree = "<group>"; };
 		B39D05731FE402E70072031D /* ToPlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPlayerProfile.swift; sourceTree = "<group>"; };
 		B39D05751FE4033C0072031D /* ToAchievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAchievements.swift; sourceTree = "<group>"; };
@@ -208,6 +234,19 @@
 			children = (
 				B33489571FE16B100098E8F1 /* Pacman.storyboard */,
 				B33489591FE16B1D0098E8F1 /* PacmanVC.swift */,
+				B3439B482007A53C0055E70F /* Actions.sks */,
+				B3439B3D2007A53B0055E70F /* BlinkAI.swift */,
+				B3439B402007A53B0055E70F /* Center of tile function.swift */,
+				B3439B412007A53B0055E70F /* ClydeAI.swift */,
+				B3439B472007A53C0055E70F /* PacmanGameScene.sks */,
+				B3439B442007A53C0055E70F /* PacmanGameScene.swift */,
+				B3439B422007A53C0055E70F /* Grid Detection X.swift */,
+				B3439B462007A53C0055E70F /* Grid Detection Y.swift */,
+				B3439B3E2007A53B0055E70F /* grid detection.swift */,
+				B3439B452007A53C0055E70F /* InkyAI.swift */,
+				B3439B432007A53C0055E70F /* Map.swift */,
+				B3439B3F2007A53B0055E70F /* Move.swift */,
+				B3439B492007A53C0055E70F /* PinkyAI.swift */,
 			);
 			path = Pacman;
 			sourceTree = "<group>";
@@ -217,7 +256,7 @@
 			children = (
 				B33489531FE16AE40098E8F1 /* SpaceInvaders.storyboard */,
 				B33489551FE16AFD0098E8F1 /* SpaceInvadersVC.swift */,
-				6B676E671FEBEEF2005C0462 /* GameScene.swift */,
+				6B676E671FEBEEF2005C0462 /* SpaceGameScene.swift */,
 				6B676E651FEBEEA8005C0462 /* GameOverScene.swift */,
 			);
 			path = "Space Invaders";
@@ -325,6 +364,7 @@
 				B334892F1FE166FF0098E8F1 /* LaunchScreen.storyboard in Resources */,
 				039065D7200659BC00AD7FF0 /* Gauntlet.storyboard in Resources */,
 				B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */,
+				B3439B552007A53D0055E70F /* Actions.sks in Resources */,
 				B33489501FE16AC60098E8F1 /* LeaderBoard.storyboard in Resources */,
 				B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */,
 				B334894C1FE16A8D0098E8F1 /* Achievements.storyboard in Resources */,
@@ -334,6 +374,7 @@
 				03E27B272006516A0043867A /* Actions.sks in Resources */,
 				03E27B172006513A0043867A /* Images in Resources */,
 				B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */,
+				B3439B542007A53D0055E70F /* PacmanGameScene.sks in Resources */,
 				B334894A1FE16A7C0098E8F1 /* PlayerProfile.storyboard in Resources */,
 				B33489541FE16AE40098E8F1 /* SpaceInvaders.storyboard in Resources */,
 				8A2C03192004FB2500A4D87A /* TitleScene.sks in Resources */,
@@ -350,6 +391,11 @@
 				03E27B2A2006516A0043867A /* GameViewController.swift in Sources */,
 				8A2C031E2004FB3B00A4D87A /* PongGameViewController.swift in Sources */,
 				B33489521FE16AD40098E8F1 /* LeaderboardVC.swift in Sources */,
+				B3439B4F2007A53D0055E70F /* Grid Detection X.swift in Sources */,
+				B3439B502007A53D0055E70F /* Map.swift in Sources */,
+				B3439B512007A53D0055E70F /* PacmanGameScene.swift in Sources */,
+				B3439B4E2007A53D0055E70F /* ClydeAI.swift in Sources */,
+				B3439B562007A53D0055E70F /* PinkyAI.swift in Sources */,
 				8A2C03182004FB2500A4D87A /* PongGameScene.swift in Sources */,
 				8A2C03202004FB3B00A4D87A /* paddle2.swift in Sources */,
 				03E27B232006516A0043867A /* CharacterSelectionViewController.swift in Sources */,
@@ -357,22 +403,28 @@
 				03E27B282006516A0043867A /* scoreViewController.swift in Sources */,
 				6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */,
 				03E27B262006516A0043867A /* Universal Variables.swift in Sources */,
+				B3439B4C2007A53D0055E70F /* Move.swift in Sources */,
+				B3439B532007A53D0055E70F /* Grid Detection Y.swift in Sources */,
 				B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */,
 				B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */,
+				B3439B4D2007A53D0055E70F /* Center of tile function.swift in Sources */,
 				8A2C03172004FB2500A4D87A /* TitleScene.swift in Sources */,
 				B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */,
 				B39D05721FE401F50072031D /* ToWheel.swift in Sources */,
 				B334895A1FE16B1D0098E8F1 /* PacmanVC.swift in Sources */,
 				B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */,
 				B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */,
+				B3439B522007A53D0055E70F /* InkyAI.swift in Sources */,
 				B33489481FE16A6D0098E8F1 /* PlayerProfileVC.swift in Sources */,
 				03E27B252006516A0043867A /* TutorialViewController.swift in Sources */,
-				6B676E681FEBEEF2005C0462 /* GameScene.swift in Sources */,
+				6B676E681FEBEEF2005C0462 /* SpaceGameScene.swift in Sources */,
+				B3439B4B2007A53D0055E70F /* grid detection.swift in Sources */,
 				03E27B242006516A0043867A /* GauntletGameScene.swift in Sources */,
 				B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */,
 				B33489621FE16B630098E8F1 /* PongVC.swift in Sources */,
 				B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */,
 				B39D05761FE4033C0072031D /* ToAchievements.swift in Sources */,
+				B3439B4A2007A53D0055E70F /* BlinkAI.swift in Sources */,
 				B334894E1FE16AA50098E8F1 /* AchievementsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
