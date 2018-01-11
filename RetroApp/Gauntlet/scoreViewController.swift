@@ -21,13 +21,13 @@ class scoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playMusic()
+//        playMusic()
         showScore()
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
         resetGame()
-        stopMusic()
+//        stopMusic()
     }
     
     func showScore() {
@@ -50,33 +50,34 @@ class scoreViewController: UIViewController {
         hasKey = false
     }
     
-    func playMusic() {
-        let deathPath = Bundle.main.path(forResource: "DeathMusic.mp3", ofType:nil)!
-        let deathUrl = URL(fileURLWithPath: deathPath)
-        do {
-            deathMusic = try AVAudioPlayer(contentsOf: deathUrl)
-        } catch {
-            print("did not work")
-        }
-        let winPath = Bundle.main.path(forResource: "CompletedLevelMusic.mp3", ofType:nil)!
-        let winUrl = URL(fileURLWithPath: winPath)
-        do {
-            completeLevelMusic = try AVAudioPlayer(contentsOf: winUrl)
-        } catch {
-            print("did not work")
-        }
-        
-        if didWin {
-            music = completeLevelMusic
-        } else {
-            music = deathMusic
-            music?.volume = 2.0
-            music?.numberOfLoops = 5
-        }
-        music?.play()
-    }
-    
-    func stopMusic() {
-        music?.stop()
-    }
+//    func playMusic() {
+//        let deathPath = Bundle.main.path(forResource: "DeathMusic.mp3", ofType:nil)!
+//        let deathUrl = URL(fileURLWithPath: deathPath)
+//        do {
+//            deathMusic = try AVAudioPlayer(contentsOf: deathUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//        let winPath = Bundle.main.path(forResource: "CompletedLevelMusic.mp3", ofType:nil)!
+//        let winUrl = URL(fileURLWithPath: winPath)
+//        do {
+//            completeLevelMusic = try AVAudioPlayer(contentsOf: winUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//
+//        if didWin {
+//            music = completeLevelMusic
+//        } else {
+//            music = deathMusic
+//            music?.volume = 2.0
+//            music?.numberOfLoops = 5
+//        }
+//        music?.play()
+//    }
+//
+//    func stopMusic() {
+//        music?.stop()
+//    }
 }
+

@@ -197,8 +197,8 @@
 				03E27B2B200651DF0043867A /* Gauntlet.storyboard */,
 				B334895B1FE16B2F0098E8F1 /* GauntletVC.swift */,
 				03E27B1D2006516A0043867A /* Universal Variables.swift */,
-				03E27B152006513A0043867A /* Images */,
 				03E27B162006513A0043867A /* Sound Effects */,
+				03E27B152006513A0043867A /* Images */,
 			);
 			path = Gauntlet;
 			sourceTree = "<group>";

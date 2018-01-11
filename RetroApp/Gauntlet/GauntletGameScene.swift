@@ -76,59 +76,59 @@ class GauntletGameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
         
         //Sound Effects
-        let itemPath = Bundle.main.path(forResource: "CollectKey.mp3", ofType:nil)!
-        let itemUrl = URL(fileURLWithPath: itemPath)
-        do {
-            collectItem = try AVAudioPlayer(contentsOf: itemUrl)
-        } catch {
-            print("did not work")
-        }
-
-        let foodPath = Bundle.main.path(forResource: "Don'tShootFood.mp3", ofType:nil)!
-        let foodUrl = URL(fileURLWithPath: foodPath)
-        do {
-            shootFood = try AVAudioPlayer(contentsOf: foodUrl)
-        } catch {
-            print("did not work")
-        }
-
-        let exitPath = Bundle.main.path(forResource: "ContactExit.mp3", ofType:nil)!
-        let exitUrl = URL(fileURLWithPath: exitPath)
-        do {
-            contactExit = try AVAudioPlayer(contentsOf: exitUrl)
-        } catch {
-            print("did not work")
-        }
-
-        let hurtPath = Bundle.main.path(forResource: "CharacterHurt.mp3", ofType:nil)!
-        let hurtUrl = URL(fileURLWithPath: hurtPath)
-        do {
-            characterHurt = try AVAudioPlayer(contentsOf: hurtUrl)
-        } catch {
-            print("did not work")
-        }
-
-        let diePath = Bundle.main.path(forResource: "CharacterDies.mp3", ofType:nil)!
-        let dieUrl = URL(fileURLWithPath: diePath)
-        do {
-            characterDies = try AVAudioPlayer(contentsOf: dieUrl)
-        } catch {
-            print("did not work")
-        }
-        let shootPath = Bundle.main.path(forResource: "ArrowShoot.wav", ofType:nil)!
-        let shootUrl = URL(fileURLWithPath: shootPath)
-        do {
-            projectileShoot = try AVAudioPlayer(contentsOf: shootUrl)
-        } catch {
-            print("did not work")
-        }
-        let hitGhostPath = Bundle.main.path(forResource: "ArrowHit.wav", ofType:nil)!
-        let hitGhostUrl = URL(fileURLWithPath: hitGhostPath)
-        do {
-            projectileHit = try AVAudioPlayer(contentsOf: hitGhostUrl)
-        } catch {
-            print("did not work")
-        }
+//        let itemPath = Bundle.main.path(forResource: "CollectKey.mp3", ofType: nil)!
+//        let itemUrl = URL(fileURLWithPath: itemPath)
+//        do {
+//            collectItem = try AVAudioPlayer(contentsOf: itemUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//
+//        let foodPath = Bundle.main.path(forResource: "Don'tShootFood.mp3", ofType:nil)!
+//        let foodUrl = URL(fileURLWithPath: foodPath)
+//        do {
+//            shootFood = try AVAudioPlayer(contentsOf: foodUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//
+//        let exitPath = Bundle.main.path(forResource: "ContactExit.mp3", ofType:nil)!
+//        let exitUrl = URL(fileURLWithPath: exitPath)
+//        do {
+//            contactExit = try AVAudioPlayer(contentsOf: exitUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//
+//        let hurtPath = Bundle.main.path(forResource: "CharacterHurt.mp3", ofType:nil)!
+//        let hurtUrl = URL(fileURLWithPath: hurtPath)
+//        do {
+//            characterHurt = try AVAudioPlayer(contentsOf: hurtUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//
+//        let diePath = Bundle.main.path(forResource: "CharacterDies.mp3", ofType:nil)!
+//        let dieUrl = URL(fileURLWithPath: diePath)
+//        do {
+//            characterDies = try AVAudioPlayer(contentsOf: dieUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//        let shootPath = Bundle.main.path(forResource: "ArrowShoot.wav", ofType:nil)!
+//        let shootUrl = URL(fileURLWithPath: shootPath)
+//        do {
+//            projectileShoot = try AVAudioPlayer(contentsOf: shootUrl)
+//        } catch {
+//            print("did not work")
+//        }
+//        let hitGhostPath = Bundle.main.path(forResource: "ArrowHit.wav", ofType:nil)!
+//        let hitGhostUrl = URL(fileURLWithPath: hitGhostPath)
+//        do {
+//            projectileHit = try AVAudioPlayer(contentsOf: hitGhostUrl)
+//        } catch {
+//            print("did not work")
+//        }
         
         //Title - "Gauntlet"
         title.text = "Gauntlet"
