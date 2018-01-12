@@ -18,7 +18,7 @@ class ViewController: UIViewController{
     }
    
     @IBAction func toPongVC(_ sender: UIButton) {
-        let nextScene: UIViewController = UIStoryboard(name: "Pong", bundle: nil).instantiateViewController(withIdentifier: "PongVC") as UIViewController
+        let nextScene: UIViewController = UIStoryboard(name: "Pong", bundle: nil).instantiateViewController(withIdentifier: "Pong") as UIViewController
         self.present(nextScene, animated: false, completion: nil)
     }
     

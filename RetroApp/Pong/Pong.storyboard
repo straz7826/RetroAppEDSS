@@ -18,20 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiF-lC-MSu">
-                                <rect key="frame" x="0.0" y="20" width="90" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main Menu"/>
-                                <connections>
-                                    <action selector="back:" destination="30B-g8-5zl" eventType="touchUpInside" id="XjA-cP-4YA"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fP-me-n3t">
-                                <rect key="frame" x="214" y="339" width="293" height="91"/>
+                                <rect key="frame" x="238" y="335" width="293" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="PongPlay"/>
                                 <connections>
-                                    <segue destination="fCb-9c-ZFK" kind="show" id="CQv-mG-c4A"/>
+                                    <segue destination="fCb-9c-ZFK" kind="show" id="SNW-Pg-8Nt"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PongLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YoR-Lm-mEd">
@@ -39,11 +31,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOH-Tb-TBi">
-                                <rect key="frame" x="133" y="524" width="454" height="400"/>
+                                <rect key="frame" x="182" y="505" width="404" height="369"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Super Mario - Question Mark Block"/>
                                 <connections>
                                     <segue destination="e8W-i2-Uxl" kind="show" id="bg2-It-a3A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiF-lC-MSu">
+                                <rect key="frame" x="20" y="64" width="90" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="back:" destination="30B-g8-5zl" eventType="touchUpInside" id="XjA-cP-4YA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="995" y="-353"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Pong-->
         <scene sceneID="F7X-Yp-zOl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBB-i2-Fuz" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Pong" automaticallyAdjustsScrollViewInsets="NO" id="iBB-i2-Fuz" userLabel="Pong" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ORo-XH-NCG">
                         <rect key="frame" x="0.0" y="20" width="768" height="44"/>
