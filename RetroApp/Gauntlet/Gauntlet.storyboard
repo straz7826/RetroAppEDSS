@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,12 +31,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uld-as-xoa">
-                                <rect key="frame" x="277" y="520" width="240" height="157"/>
+                                <rect key="frame" x="277" y="520" width="259" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPH-th-a3d">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="72"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                         <state key="normal" title="Start Game">
                                             <color key="titleColor" red="0.89697017766497467" green="0.23268331290152461" blue="0.21421293690618023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -44,8 +45,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz0-WP-mfe">
-                                        <rect key="frame" x="12.5" y="97" width="215" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <rect key="frame" x="11.5" y="102" width="236" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                         <state key="normal" title="Start Tutorial">
                                             <color key="titleColor" red="0.89194369316101074" green="0.23163747787475586" blue="0.21605569124221802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -79,7 +80,7 @@
         <!--Tutorial View Controller-->
         <scene sceneID="euQ-0F-CRb">
             <objects>
-                <viewController id="eOB-Yy-yZt" customClass="TutorialViewController" customModule="Test_Gauntlet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eOB-Yy-yZt" customClass="TutorialViewController" customModule="RetroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNN-71-Viu">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +226,7 @@
         <!--Character Selection View Controller-->
         <scene sceneID="mdU-aa-TNw">
             <objects>
-                <viewController id="PQg-WG-bgI" customClass="CharacterSelectionViewController" customModule="Test_Gauntlet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PQg-WG-bgI" customClass="CharacterSelectionViewController" customModule="RetroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bp-bV-zVA">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,7 +314,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Test_Gauntlet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="RetroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,7 +356,7 @@
         <!--Score View Controller-->
         <scene sceneID="PWx-Ug-bSE">
             <objects>
-                <viewController storyboardIdentifier="scoreVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xwV-E6-T3j" customClass="scoreViewController" customModule="Test_Gauntlet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scoreVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xwV-E6-T3j" customClass="scoreViewController" customModule="RetroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fO-dq-SD8">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
