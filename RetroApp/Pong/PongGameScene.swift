@@ -9,6 +9,7 @@
 import Foundation
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 let BallCategoryName = "ball"
 let GameMessageName = "gameMessage"
@@ -39,6 +40,7 @@ class PongGameScene: SKScene {
         ball.physicsBody?.categoryBitMask = BallCategory
         ball.position = CGPoint(x: 512, y: 384)
         ball.physicsBody?.applyImpulse(CGVector(dx: 15.0, dy: -15.0))
+        
         //setting top and bottom
         let hopeful = CGRect(x: frame.origin.x , y: frame.origin.y , width: 1 , height: 800)
         let hopeful2 = CGRect(x: 1024 , y: frame.origin.y , width: -1 , height:800)

@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="PongPlay"/>
                                 <connections>
-                                    <segue destination="fCb-9c-ZFK" kind="show" id="SNW-Pg-8Nt"/>
+                                    <segue destination="fCb-9c-ZFK" kind="show" id="QUM-tM-9FK"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PongLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YoR-Lm-mEd">
@@ -120,8 +120,8 @@
         <!--PongGameViewController-->
         <scene sceneID="ouW-hD-stL">
             <objects>
-                <viewController storyboardIdentifier="PongGameViewController" id="fCb-9c-ZFK" userLabel="PongGameViewController" customClass="PongGameViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2BL-xc-ICL" customClass="PongGameScene" customModule="RetroApp" customModuleProvider="target">
+                <viewController storyboardIdentifier="PongGameViewController" id="fCb-9c-ZFK" userLabel="PongGameViewController" customClass="PongGameViewController" customModule="RetroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2BL-xc-ICL" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
