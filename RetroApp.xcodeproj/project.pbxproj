@@ -48,7 +48,6 @@
 		B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B334895F1FE16B570098E8F1 /* Pong.storyboard */; };
 		B33489621FE16B630098E8F1 /* PongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489611FE16B630098E8F1 /* PongVC.swift */; };
 		B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489631FE16B6E0098E8F1 /* SnakeVC.swift */; };
-		B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489651FE16B770098E8F1 /* Snake.storyboard */; };
 		B3439B4A2007A53D0055E70F /* BlinkAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B3D2007A53B0055E70F /* BlinkAI.swift */; };
 		B3439B4B2007A53D0055E70F /* grid detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B3E2007A53B0055E70F /* grid detection.swift */; };
 		B3439B4C2007A53D0055E70F /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3439B3F2007A53B0055E70F /* Move.swift */; };
@@ -66,6 +65,10 @@
 		B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05731FE402E70072031D /* ToPlayerProfile.swift */; };
 		B39D05761FE4033C0072031D /* ToAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05751FE4033C0072031D /* ToAchievements.swift */; };
 		B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05771FE403730072031D /* ToLeaderboard.swift */; };
+		F85D16A8200CEF1D00411DC2 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F85D16A5200CEF1D00411DC2 /* UIImage+animatedGIF.m */; };
+		F85D16A9200CEF1D00411DC2 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D16A6200CEF1D00411DC2 /* Snake.swift */; };
+		F85D16B7200CF02200411DC2 /* SnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D16B6200CF02200411DC2 /* SnakeViewController.swift */; };
+		F85D16BA200CF06700411DC2 /* Snake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85D16B8200CF06700411DC2 /* Snake.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +115,6 @@
 		B334895F1FE16B570098E8F1 /* Pong.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pong.storyboard; sourceTree = "<group>"; };
 		B33489611FE16B630098E8F1 /* PongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongVC.swift; sourceTree = "<group>"; };
 		B33489631FE16B6E0098E8F1 /* SnakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeVC.swift; sourceTree = "<group>"; };
-		B33489651FE16B770098E8F1 /* Snake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snake.storyboard; sourceTree = "<group>"; };
 		B3439B3D2007A53B0055E70F /* BlinkAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkAI.swift; sourceTree = "<group>"; };
 		B3439B3E2007A53B0055E70F /* grid detection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "grid detection.swift"; sourceTree = "<group>"; };
 		B3439B3F2007A53B0055E70F /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
@@ -130,6 +132,12 @@
 		B39D05731FE402E70072031D /* ToPlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPlayerProfile.swift; sourceTree = "<group>"; };
 		B39D05751FE4033C0072031D /* ToAchievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAchievements.swift; sourceTree = "<group>"; };
 		B39D05771FE403730072031D /* ToLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLeaderboard.swift; sourceTree = "<group>"; };
+		F85D16A4200CEF1C00411DC2 /* RetroApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetroApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		F85D16A5200CEF1D00411DC2 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+animatedGIF.m"; path = "../../../../../Desktop/drive-download-20180115T141314Z-001/UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		F85D16A6200CEF1D00411DC2 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snake.swift; path = "../../../../../Desktop/drive-download-20180115T141314Z-001/Snake.swift"; sourceTree = "<group>"; };
+		F85D16A7200CEF1D00411DC2 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+animatedGIF.h"; path = "../../../../../Desktop/drive-download-20180115T141314Z-001/UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		F85D16B6200CF02200411DC2 /* SnakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnakeViewController.swift; path = "../../../../../Desktop/Snake-V-1.4/Snake V-1.4/SnakeViewController.swift"; sourceTree = "<group>"; };
+		F85D16B9200CF06700411DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../Desktop/Snake-V-1.4/Snake V-1.4/Base.lproj/Snake.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +196,13 @@
 		B33489371FE167B00098E8F1 /* Snake */ = {
 			isa = PBXGroup;
 			children = (
-				B33489651FE16B770098E8F1 /* Snake.storyboard */,
+				F85D16B6200CF02200411DC2 /* SnakeViewController.swift */,
+				F85D16B8200CF06700411DC2 /* Snake.storyboard */,
+				F85D16A6200CEF1D00411DC2 /* Snake.swift */,
+				F85D16A7200CEF1D00411DC2 /* UIImage+animatedGIF.h */,
+				F85D16A5200CEF1D00411DC2 /* UIImage+animatedGIF.m */,
 				B33489631FE16B6E0098E8F1 /* SnakeVC.swift */,
+				F85D16A4200CEF1C00411DC2 /* RetroApp-Bridging-Header.h */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -330,6 +343,7 @@
 				TargetAttributes = {
 					B33489201FE166FF0098E8F1 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -365,8 +379,8 @@
 				039065D7200659BC00AD7FF0 /* Gauntlet.storyboard in Resources */,
 				B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */,
 				B3439B552007A53D0055E70F /* Actions.sks in Resources */,
+				F85D16BA200CF06700411DC2 /* Snake.storyboard in Resources */,
 				B33489501FE16AC60098E8F1 /* LeaderBoard.storyboard in Resources */,
-				B33489661FE16B770098E8F1 /* Snake.storyboard in Resources */,
 				B334894C1FE16A8D0098E8F1 /* Achievements.storyboard in Resources */,
 				8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */,
 				B334892C1FE166FF0098E8F1 /* Assets.xcassets in Resources */,
@@ -401,6 +415,7 @@
 				03E27B232006516A0043867A /* CharacterSelectionViewController.swift in Sources */,
 				B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */,
 				03E27B282006516A0043867A /* scoreViewController.swift in Sources */,
+				F85D16A8200CEF1D00411DC2 /* UIImage+animatedGIF.m in Sources */,
 				6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */,
 				03E27B262006516A0043867A /* Universal Variables.swift in Sources */,
 				B3439B4C2007A53D0055E70F /* Move.swift in Sources */,
@@ -411,6 +426,7 @@
 				8A2C03172004FB2500A4D87A /* TitleScene.swift in Sources */,
 				B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */,
 				B39D05721FE401F50072031D /* ToWheel.swift in Sources */,
+				F85D16B7200CF02200411DC2 /* SnakeViewController.swift in Sources */,
 				B334895A1FE16B1D0098E8F1 /* PacmanVC.swift in Sources */,
 				B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */,
 				B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */,
@@ -419,6 +435,7 @@
 				03E27B252006516A0043867A /* TutorialViewController.swift in Sources */,
 				6B676E681FEBEEF2005C0462 /* SpaceGameScene.swift in Sources */,
 				B3439B4B2007A53D0055E70F /* grid detection.swift in Sources */,
+				F85D16A9200CEF1D00411DC2 /* Snake.swift in Sources */,
 				03E27B242006516A0043867A /* GauntletGameScene.swift in Sources */,
 				B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */,
 				B33489621FE16B630098E8F1 /* PongVC.swift in Sources */,
@@ -446,6 +463,14 @@
 				B334892E1FE166FF0098E8F1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F85D16B8200CF06700411DC2 /* Snake.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85D16B9200CF06700411DC2 /* Base */,
+			);
+			name = Snake.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -562,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82BQ2MD3YW;
 				INFOPLIST_FILE = RetroApp/Info.plist;
@@ -569,6 +595,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZS.RetroApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RetroApp/Snake/RetroApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -578,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82BQ2MD3YW;
 				INFOPLIST_FILE = RetroApp/Info.plist;
@@ -585,6 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZS.RetroApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RetroApp/Snake/RetroApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
