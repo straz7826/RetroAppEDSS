@@ -65,10 +65,9 @@
 		B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05731FE402E70072031D /* ToPlayerProfile.swift */; };
 		B39D05761FE4033C0072031D /* ToAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05751FE4033C0072031D /* ToAchievements.swift */; };
 		B39D05781FE403730072031D /* ToLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D05771FE403730072031D /* ToLeaderboard.swift */; };
-		F85D16A8200CEF1D00411DC2 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F85D16A5200CEF1D00411DC2 /* UIImage+animatedGIF.m */; };
-		F85D16A9200CEF1D00411DC2 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D16A6200CEF1D00411DC2 /* Snake.swift */; };
-		F85D16B7200CF02200411DC2 /* SnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D16B6200CF02200411DC2 /* SnakeViewController.swift */; };
-		F85D16BA200CF06700411DC2 /* Snake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85D16B8200CF06700411DC2 /* Snake.storyboard */; };
+		F8273120200E374C002F065F /* SnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827311E200E374C002F065F /* SnakeViewController.swift */; };
+		F8273121200E374C002F065F /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827311F200E374C002F065F /* Snake.swift */; };
+		F872D67A200E35A300E85B67 /* Snake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F872D679200E35A300E85B67 /* Snake.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,12 +131,9 @@
 		B39D05731FE402E70072031D /* ToPlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPlayerProfile.swift; sourceTree = "<group>"; };
 		B39D05751FE4033C0072031D /* ToAchievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAchievements.swift; sourceTree = "<group>"; };
 		B39D05771FE403730072031D /* ToLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLeaderboard.swift; sourceTree = "<group>"; };
-		F85D16A4200CEF1C00411DC2 /* RetroApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetroApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		F85D16A5200CEF1D00411DC2 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+animatedGIF.m"; path = "../../../../../Desktop/drive-download-20180115T141314Z-001/UIImage+animatedGIF.m"; sourceTree = "<group>"; };
-		F85D16A6200CEF1D00411DC2 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snake.swift; path = "../../../../../Desktop/drive-download-20180115T141314Z-001/Snake.swift"; sourceTree = "<group>"; };
-		F85D16A7200CEF1D00411DC2 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+animatedGIF.h"; path = "../../../../../Desktop/drive-download-20180115T141314Z-001/UIImage+animatedGIF.h"; sourceTree = "<group>"; };
-		F85D16B6200CF02200411DC2 /* SnakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnakeViewController.swift; path = "../../../../../Desktop/Snake-V-1.4/Snake V-1.4/SnakeViewController.swift"; sourceTree = "<group>"; };
-		F85D16B9200CF06700411DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../Desktop/Snake-V-1.4/Snake V-1.4/Base.lproj/Snake.storyboard"; sourceTree = "<group>"; };
+		F827311E200E374C002F065F /* SnakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeViewController.swift; sourceTree = "<group>"; };
+		F827311F200E374C002F065F /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		F872D679200E35A300E85B67 /* Snake.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Snake.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,13 +192,10 @@
 		B33489371FE167B00098E8F1 /* Snake */ = {
 			isa = PBXGroup;
 			children = (
-				F85D16B6200CF02200411DC2 /* SnakeViewController.swift */,
-				F85D16B8200CF06700411DC2 /* Snake.storyboard */,
-				F85D16A6200CEF1D00411DC2 /* Snake.swift */,
-				F85D16A7200CEF1D00411DC2 /* UIImage+animatedGIF.h */,
-				F85D16A5200CEF1D00411DC2 /* UIImage+animatedGIF.m */,
+				F827311F200E374C002F065F /* Snake.swift */,
+				F827311E200E374C002F065F /* SnakeViewController.swift */,
+				F872D679200E35A300E85B67 /* Snake.storyboard */,
 				B33489631FE16B6E0098E8F1 /* SnakeVC.swift */,
-				F85D16A4200CEF1C00411DC2 /* RetroApp-Bridging-Header.h */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -379,7 +372,7 @@
 				039065D7200659BC00AD7FF0 /* Gauntlet.storyboard in Resources */,
 				B33489601FE16B570098E8F1 /* Pong.storyboard in Resources */,
 				B3439B552007A53D0055E70F /* Actions.sks in Resources */,
-				F85D16BA200CF06700411DC2 /* Snake.storyboard in Resources */,
+				F872D67A200E35A300E85B67 /* Snake.storyboard in Resources */,
 				B33489501FE16AC60098E8F1 /* LeaderBoard.storyboard in Resources */,
 				B334894C1FE16A8D0098E8F1 /* Achievements.storyboard in Resources */,
 				8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */,
@@ -415,10 +408,10 @@
 				03E27B232006516A0043867A /* CharacterSelectionViewController.swift in Sources */,
 				B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */,
 				03E27B282006516A0043867A /* scoreViewController.swift in Sources */,
-				F85D16A8200CEF1D00411DC2 /* UIImage+animatedGIF.m in Sources */,
 				6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */,
 				03E27B262006516A0043867A /* Universal Variables.swift in Sources */,
 				B3439B4C2007A53D0055E70F /* Move.swift in Sources */,
+				F8273120200E374C002F065F /* SnakeViewController.swift in Sources */,
 				B3439B532007A53D0055E70F /* Grid Detection Y.swift in Sources */,
 				B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */,
 				B39D05741FE402E70072031D /* ToPlayerProfile.swift in Sources */,
@@ -426,7 +419,6 @@
 				8A2C03172004FB2500A4D87A /* TitleScene.swift in Sources */,
 				B334895C1FE16B2F0098E8F1 /* GauntletVC.swift in Sources */,
 				B39D05721FE401F50072031D /* ToWheel.swift in Sources */,
-				F85D16B7200CF02200411DC2 /* SnakeViewController.swift in Sources */,
 				B334895A1FE16B1D0098E8F1 /* PacmanVC.swift in Sources */,
 				B33489461FE16A380098E8F1 /* WheelVC.swift in Sources */,
 				B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */,
@@ -435,7 +427,7 @@
 				03E27B252006516A0043867A /* TutorialViewController.swift in Sources */,
 				6B676E681FEBEEF2005C0462 /* SpaceGameScene.swift in Sources */,
 				B3439B4B2007A53D0055E70F /* grid detection.swift in Sources */,
-				F85D16A9200CEF1D00411DC2 /* Snake.swift in Sources */,
+				F8273121200E374C002F065F /* Snake.swift in Sources */,
 				03E27B242006516A0043867A /* GauntletGameScene.swift in Sources */,
 				B33489561FE16AFD0098E8F1 /* SpaceInvadersVC.swift in Sources */,
 				B33489621FE16B630098E8F1 /* PongVC.swift in Sources */,
@@ -463,14 +455,6 @@
 				B334892E1FE166FF0098E8F1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F85D16B8200CF06700411DC2 /* Snake.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F85D16B9200CF06700411DC2 /* Base */,
-			);
-			name = Snake.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
