@@ -16,10 +16,11 @@ class LeaderboardVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func back(_ sender: UIButton) {
+    @IBAction func toMainMenu(_ sender: Any) {
         let nextScene: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu") as UIViewController
         self.present(nextScene, animated: false, completion: nil)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
