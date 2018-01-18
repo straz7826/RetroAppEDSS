@@ -91,16 +91,16 @@ class SnakeViewController: UIViewController {
     @IBOutlet weak var food: UIImageView!
     @IBOutlet weak var snakeHead: UIImageView!
     @IBOutlet weak var startPosition: UIImageView!
-   
+    
     @IBOutlet weak var body1: UIImageView!
     @IBOutlet weak var foodStart: UIImageView!
     
- var timer:Timer?
+    var timer:Timer?
     
     var snake = Snake(speed: 0.30)
     
-   
- 
+    
+    
     
     
     
@@ -112,87 +112,16 @@ class SnakeViewController: UIViewController {
         
         snake.move(Image: snakeHead, Body1: body1, start: foodStart)
         let headHitBody = snake.headHitBody()
-        if headHitBody == true {
-            print("Lppl")
-            snake.returnImage(Image: body2)
-            snake.returnImage(Image: body3)
-            snake.returnImage(Image: body4)
-            snake.returnImage(Image: body5)
-            snake.returnImage(Image: body6)
-            snake.returnImage(Image: body7)
-            snake.returnImage(Image: body8)
-            snake.returnImage(Image: body9)
-            snake.returnImage(Image: body10)
-            snake.returnImage(Image: body11)
-            snake.returnImage(Image: body12)
-            snake.returnImage(Image: body13)
-            snake.returnImage(Image: body14)
-            snake.returnImage(Image: body15)
-            snake.returnImage(Image: body16)
-            snake.returnImage(Image: body17)
-            snake.returnImage(Image: body18)
-            snake.returnImage(Image: body19)
-            snake.returnImage(Image: body20)
-            snake.returnImage(Image: body21)
-            snake.returnImage(Image: body22)
-            snake.returnImage(Image: body23)
-            snake.returnImage(Image: body24)
-            snake.returnImage(Image: body25)
-            snake.returnImage(Image: body26)
-            snake.returnImage(Image: body27)
-            snake.returnImage(Image: body28)
-            snake.returnImage(Image: body29)
-            snake.returnImage(Image: body30)
-            snake.returnImage(Image: body31)
-            snake.returnImage(Image: body32)
-            snake.returnImage(Image: body33)
-            snake.returnImage(Image: body34)
-            snake.returnImage(Image: body35)
-            snake.returnImage(Image: body36)
-            snake.returnImage(Image: body37)
-            snake.returnImage(Image: body38)
-            snake.returnImage(Image: body39)
-            snake.returnImage(Image: body40)
-            snake.returnImage(Image: body41)
-            snake.returnImage(Image: body42)
-            snake.returnImage(Image: body43)
-            snake.returnImage(Image: body44)
-            snake.returnImage(Image: body45)
-            snake.returnImage(Image: body46)
-            snake.returnImage(Image: body47)
-            snake.returnImage(Image: body48)
-            snake.returnImage(Image: body49)
-            snake.returnImage(Image: body50)
-            snake.returnImage(Image: body51)
-            snake.returnImage(Image: body52)
-            snake.returnImage(Image: body53)
-            snake.returnImage(Image: body54)
-            snake.returnImage(Image: body55)
-            snake.returnImage(Image: body56)
-            snake.returnImage(Image: body57)
-            snake.returnImage(Image: body58)
-            snake.returnImage(Image: body59)
-            snake.returnImage(Image: body60)
-            snake.returnImage(Image: body61)
-            snake.returnImage(Image: body62)
-            snake.returnImage(Image: body63)
-            snake.returnImage(Image: body64)
-            snake.returnImage(Image: body65)
-            snake.returnImage(Image: body66)
-            snake.returnImage(Image: body67)
-            endGame()
-            
-        }
         
         if Int(snake.length) > x{
             snake.spawnImage(Image: body66, length: x, start: foodStart)
             x += 1
         }
         if Int(snake.length) > 0{
-        snake.spawnImage(Image: body61, length: snake.bodyCoordinates.count - 1, start: foodStart)
+            snake.spawnImage(Image: body61, length: snake.bodyCoordinates.count - 1, start: foodStart)
         }
         //snake.spawnImage(Image: body50, length: bodyCoordinates.capacity - 2, start: foodStart)
-            
+        
         if Int(snake.length) > x{
             snake.spawnImage(Image: body67, length: x, start: foodStart)
             x += 1
@@ -453,6 +382,12 @@ class SnakeViewController: UIViewController {
             snake.spawnImage(Image: body65, length: x, start: foodStart)
             x += 1
         }
+        if headHitBody == true {
+            
+            endGame()
+            
+        }
+        
         
         let headHitWall = snake.headHitWall(Image: snakeHead)
         if headHitWall == true{
@@ -465,7 +400,7 @@ class SnakeViewController: UIViewController {
             snake.foodAte(Image: food,start: foodStart, body: body1)
             //let scoreNumber = snake.score00
             
-            score.text = "\(snake.score), \(snake.length)"
+            score.text = "Score: \(snake.score)"
         }
     }
     
@@ -473,22 +408,6 @@ class SnakeViewController: UIViewController {
         if (timer != nil) {
             return
         }
-        
-        
-        startButton!.isHidden = true
-        snake.direction = Direction.up
-        snake.length = 0
-        snake.score = 0
-        score.text = "0"
-        snake.spawn()
-
-            
-        snake.genFood(Image: food,start: foodStart)
-        timer = Timer.scheduledTimer(timeInterval: snake.speed, target: self, selector: #selector(timerMethod(_:)) , userInfo: nil, repeats: true)
-        
-    }
-    
-    func endGame() {
         snake.returnImage(Image: body2)
         snake.returnImage(Image: body3)
         snake.returnImage(Image: body4)
@@ -555,11 +474,26 @@ class SnakeViewController: UIViewController {
         snake.returnImage(Image: body65)
         snake.returnImage(Image: body66)
         snake.returnImage(Image: body67)
+        
+        startButton!.isHidden = true
+        snake.direction = Direction.up
+        snake.length = 0
+        snake.score = 0
+        score.text = "0"
+        snake.spawn()
+        
+        
+        snake.genFood(Image: food,start: foodStart)
+        timer = Timer.scheduledTimer(timeInterval: snake.speed, target: self, selector: #selector(timerMethod(_:)) , userInfo: nil, repeats: true)
+        
+    }
+    
+    func endGame() {
         startButton!.isHidden = false
         timer!.invalidate()
         timer = nil
     }
-
+    
     @IBAction func upButton(_ sender: Any) {
         snake.changeDirection(Direction.up)
     }
@@ -572,21 +506,22 @@ class SnakeViewController: UIViewController {
     @IBAction func leftButton(_ sender: Any) {
         snake.changeDirection(Direction.left)
     }
-   
+    
     @IBAction func startButton(_ sender: Any) {
         startGame()
         
         snakeHead.center.x = startPosition.center.x
-       snakeHead.center.y = startPosition.center.y
+        snakeHead.center.y = startPosition.center.y
     }
     
-   
     
     
-       override func didReceiveMemoryWarning() {
+    
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }

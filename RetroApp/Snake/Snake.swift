@@ -36,7 +36,7 @@ class Snake{
     
     
     init(speed:Double) {
-       
+        
         
         self.speed = speed
         foodCordinate = Coordinates(x: 0, y: 0)
@@ -45,7 +45,7 @@ class Snake{
         wallSnake = [Coordinates(x: 0, y: 0)]
         
     }
-   
+    
     
     func move(Image: UIView, Body1: UIView,start: UIView) {
         var headPoint = bodyCoordinates[0]
@@ -95,7 +95,7 @@ class Snake{
     }
     
     func spawn(){
-
+        
         bodyCoordinates.removeAll()
         let cord1 = Coordinates(x: 7, y: 10)
         bodyCoordinates.insert(cord1, at: 0)
@@ -114,13 +114,9 @@ class Snake{
         
         print("\(bodyCoordinates), and more....")
         length+=1
+        score+=100
         genFood(Image: Image, start:start)
         bodyCoordinates.insert(oldBodyCoords, at: bodyCoordinates.endIndex)
-        let lastBodyX = oldBodyCoords.x
-        let lastBodyY = oldBodyCoords.y
-        body.center.x = CGFloat(startX + 32 * (lastBodyX-1) )
-        body.center.y = CGFloat(startY - 32 * (lastBodyY+1))
-        score += 100
     }
     func genFood(Image: UIView,start: UIView){
         var x: Int = 0
@@ -185,14 +181,14 @@ class Snake{
             return true
         }
         return false
-    
-//        for wallPoint in wallSnake[1..<wallSnake.count]   {
-//            if wallPoint.x == headPoint.x && wallPoint.y == headPoint.y {
-//                isAlive = false
-//                return true
-//            }
-//        }
-//        return false
+        
+        //        for wallPoint in wallSnake[1..<wallSnake.count]   {
+        //            if wallPoint.x == headPoint.x && wallPoint.y == headPoint.y {
+        //                isAlive = false
+        //                return true
+        //            }
+        //        }
+        //        return false
     }
     func returnImage(Image: UIView){
         Image.center.x = 0
@@ -221,16 +217,16 @@ class Snake{
             n += 1
         }
     }
-        
-    
-   
-    
-       
     
     
     
-            
-        
+    
+    
+    
+    
+    
+    
+    
     
     
 }
