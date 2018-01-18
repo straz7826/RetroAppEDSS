@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoadingScreen" translatesAutoresizingMaskIntoConstraints="NO" id="BDz-dW-1hj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TitleScreen" translatesAutoresizingMaskIntoConstraints="NO" id="BDz-dW-1hj">
                                 <rect key="frame" x="82" y="103" width="597" height="518"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -504,11 +504,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LoadingScreen" width="32" height="32"/>
         <image name="New Piskel" width="32" height="32"/>
         <image name="New Piskel-2" width="32" height="32"/>
         <image name="New Piskel-3" width="32" height="32"/>
         <image name="START" width="640" height="640"/>
+        <image name="TitleScreen" width="1024" height="1024"/>
         <image name="down" width="491" height="285"/>
         <image name="left" width="285" height="491"/>
         <image name="right" width="285" height="491"/>
