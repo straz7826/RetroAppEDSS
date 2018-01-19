@@ -25,6 +25,7 @@ class SpaceInvadersVC: UIViewController {
         
         // Create and configure the scene.
         let scene = SpaceGameScene(size: skView.frame.size)
+           scene.scaleMode = .resizeFill
         skView.presentScene(scene)
         
         // Pause the view (and thus the game) when the app is interrupted or backgrounded

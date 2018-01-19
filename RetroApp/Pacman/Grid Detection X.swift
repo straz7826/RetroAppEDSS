@@ -1,4 +1,4 @@
-//
+///
 //  Grid Detection X.swift
 //  Pacman
 //
@@ -9,6 +9,8 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+
+// Matt k, same as grid detection but only in x axis
 
 func GridDetectionX(X: CGFloat) -> CGFloat {
     

@@ -10,6 +10,8 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+//Matt k, takes in tile and finds the center of it as a pixel coordinate
+
 func CenterOfTile(tile: CGPoint) -> CGPoint {
     
     var tileCenter: CGPoint = CGPoint(x:0,y:0)
@@ -25,12 +27,12 @@ func CenterOfTile(tile: CGPoint) -> CGPoint {
     var YValue: CGFloat = 0
     
     XCounter = tile.x
-    YCounter = tile.y 
+    YCounter = tile.y
     
     XLowerLimit = CGFloat(-384 + (gridX * XCounter))
     XUpperLimit = CGFloat(-384 + (gridX * (XCounter + 1)))
     XValue = (XLowerLimit + XUpperLimit) / 2
-   
+    
     YLowerLimit = CGFloat(512 - (gridY * YCounter))
     YUpperLimit = CGFloat(512 - (gridY * (YCounter + 1)))
     YValue = (YLowerLimit + YUpperLimit) / 2
@@ -39,3 +41,4 @@ func CenterOfTile(tile: CGPoint) -> CGPoint {
     
     return tileCenter
 }
+
