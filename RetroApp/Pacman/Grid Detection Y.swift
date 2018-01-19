@@ -2,13 +2,16 @@
 //  Grid Detection Y.swift
 //  Pacman
 //
-//  Created by Matthew Murray on 2017-12-07.
+//  Created and coded by Matthew Murray on 2017-12-07.
+//determines which part of the y axis in the grid pacman is in
 //  Copyright © 2017 Robit-Team  +1. All rights reserved.
 //
 
 import Foundation
 import SpriteKit
 import GameplayKit
+
+// Matt k, same as grid detection but in y-axis
 
 func GridDetectionY(Y: CGFloat) -> CGFloat {
     
@@ -38,3 +41,4 @@ func GridDetectionY(Y: CGFloat) -> CGFloat {
     }
     return YValue
 }
+
