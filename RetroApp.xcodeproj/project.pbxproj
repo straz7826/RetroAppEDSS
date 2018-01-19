@@ -26,7 +26,6 @@
 		8A2C03192004FB2500A4D87A /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03152004FB2500A4D87A /* TitleScene.sks */; };
 		8A2C031A2004FB2500A4D87A /* PongGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03162004FB2500A4D87A /* PongGameScene.sks */; };
 		8A2C031E2004FB3B00A4D87A /* PongGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C031B2004FB3B00A4D87A /* PongGameViewController.swift */; };
-		8A2C03202004FB3B00A4D87A /* paddle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C031D2004FB3B00A4D87A /* paddle2.swift */; };
 		B33489251FE166FF0098E8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489241FE166FF0098E8F1 /* AppDelegate.swift */; };
 		B33489271FE166FF0098E8F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33489261FE166FF0098E8F1 /* ViewController.swift */; };
 		B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33489281FE166FF0098E8F1 /* Main.storyboard */; };
@@ -88,7 +87,6 @@
 		8A2C03152004FB2500A4D87A /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
 		8A2C03162004FB2500A4D87A /* PongGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PongGameScene.sks; sourceTree = "<group>"; };
 		8A2C031B2004FB3B00A4D87A /* PongGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PongGameViewController.swift; sourceTree = "<group>"; };
-		8A2C031D2004FB3B00A4D87A /* paddle2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paddle2.swift; sourceTree = "<group>"; };
 		B33489211FE166FF0098E8F1 /* RetroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33489241FE166FF0098E8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B33489261FE166FF0098E8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				8A2C031B2004FB3B00A4D87A /* PongGameViewController.swift */,
-				8A2C031D2004FB3B00A4D87A /* paddle2.swift */,
 				8A2C03112004FAAA00A4D87A /* Actions.sks */,
 				B334895F1FE16B570098E8F1 /* Pong.storyboard */,
 				B33489611FE16B630098E8F1 /* PongVC.swift */,
@@ -397,7 +394,6 @@
 				B3439B4E2007A53D0055E70F /* ClydeAI.swift in Sources */,
 				B3439B562007A53D0055E70F /* PinkyAI.swift in Sources */,
 				8A2C03182004FB2500A4D87A /* PongGameScene.swift in Sources */,
-				8A2C03202004FB3B00A4D87A /* paddle2.swift in Sources */,
 				03E27B232006516A0043867A /* CharacterSelectionViewController.swift in Sources */,
 				B33489641FE16B6E0098E8F1 /* SnakeVC.swift in Sources */,
 				03E27B282006516A0043867A /* scoreViewController.swift in Sources */,

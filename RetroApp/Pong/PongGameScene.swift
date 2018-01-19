@@ -20,8 +20,17 @@ let BorderCategory : UInt32 = 0x1 << 4
 let topCategory : UInt32 = 0x1 << 5
 var topLbl = SKLabelNode()
 var btmLbl = SKLabelNode()
+let standard = CGPoint(x: 0, y: 0)
+let timetowait:TimeInterval = 2.0
+var topScore = 0
+var bottomScore = 1
+var label1 = 0
+var label2 = 0
+var label4 = 0
+var label3 = "You Win!"
+var next2 = "Game Over"
 
-class PongGameScene: SKScene {
+class PongGameScene: SKScene, SKPhysicsContactDelegate {
     
     var isFingerOnPaddle1 = false
     var isFingerOnPaddle2 = false
@@ -34,20 +43,21 @@ class PongGameScene: SKScene {
         self.physicsBody = border
         
         physicsWorld.gravity = CGVector(dx: 0.0, dy: 0.0)
-        
+        physicsWorld.contactDelegate = self
         let ball = childNode(withName: BallCategoryName) as! SKSpriteNode
 
         ball.physicsBody?.categoryBitMask = BallCategory
-        ball.position = CGPoint(x: 512, y: 384)
-        ball.physicsBody?.applyImpulse(CGVector(dx: 15.0, dy: -15.0))
+        ball.position = CGPoint(x: 0, y: 0)
+        ball.physicsBody?.applyImpulse(CGVector(dx: 20.0, dy: -20.0))
         
         //setting top and bottom
-        let hopeful = CGRect(x: frame.origin.x , y: frame.origin.y , width: 1 , height: 800)
-        let hopeful2 = CGRect(x: 1024 , y: frame.origin.y , width: -1 , height:800)
+        let hopeful = CGRect(x: -400 , y: 480 , width: 800 , height: -1)
+        let hopeful2 = CGRect(x: -400 , y: -480 , width: 800 , height: 1)
         let bottom = SKNode()
         let top = SKNode()
-        bottom.physicsBody = SKPhysicsBody(edgeLoopFrom: hopeful)
-        top.physicsBody = SKPhysicsBody(edgeLoopFrom: hopeful2)
+        //hopeful.
+        bottom.physicsBody = SKPhysicsBody(edgeLoopFrom: hopeful2)
+        top.physicsBody = SKPhysicsBody(edgeLoopFrom: hopeful)
         addChild(top)
         addChild(bottom)
         
@@ -82,42 +92,6 @@ class PongGameScene: SKScene {
                 print("Began touch on paddle2")
                 isFingerOnPaddle2 = true
             }
-        }
-    }
-    
-    //contacts
-    func didBegin(_ contact: SKPhysicsContact) {
-        print("AHHHHHH")
-        var firstBody: SKPhysicsBody
-        var secondBody: SKPhysicsBody
-        if contact.bodyA.categoryBitMask == BallCategory {
-            print("Ball is body A")
-            
-        }else if contact.bodyB.categoryBitMask == BallCategory{
-            print("Ball is body B")
-        }
-        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
-            firstBody = contact.bodyA
-            secondBody = contact.bodyB
-            print("First body is lowest")
-        }else{
-            firstBody = contact.bodyB
-            secondBody = contact.bodyA
-            print("Second Body is lowest")
-        }
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == PaddleCategory{
-            print("Collision with paddle")
-        }
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BottomCategory{
-            print("Fault on P1, P2 ball")
-            //            let ball = scene?.childNode(withName: BallCategoryName) as! SKSpriteNode
-            //            didMove(to: self.view!)
-            
-        }
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == topCategory{
-            print("Fault on P2, P1 ball")
-            //            let ball = scene?.childNode(withName: BallCategoryName) as! SKSpriteNode
-            //            didMove(to: self.view!)
         }
     }
     
@@ -157,7 +131,96 @@ class PongGameScene: SKScene {
         
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    let moveBall = SKAction.move(to: standard, duration: 0.0)
+    //contacts
+    func didBegin(_ contact: SKPhysicsContact) {
+        print("AHHHHHH")
+        var firstBody: SKPhysicsBody
+        var secondBody: SKPhysicsBody
+        if contact.bodyA.categoryBitMask == BallCategory {
+            print("Ball is body A")
+            
+        }else if contact.bodyB.categoryBitMask == BallCategory{
+            print("Ball is body B")
+        }
+        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
+            firstBody = contact.bodyA
+            secondBody = contact.bodyB
+            print("First body is lowest")
+        }else{
+            firstBody = contact.bodyB
+            secondBody = contact.bodyA
+            print("Second Body is lowest")
+        }
+        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BottomCategory{
+            print("Fault on P1, P2 ball")
+             scene!.childNode(withName: BallCategoryName)?.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+            scene!.childNode(withName: BallCategoryName)?.run(moveBall)
+             bottomScore += 1
+            let waitaction = SKAction.wait(forDuration:timetowait)
+            let topLbl = SKLabelNode(fontNamed: "Helvetica")
+            topLbl.text = String(label4)
+        topLbl.fontSize = 65
+            topLbl.fontColor = SKColor.white
+            topLbl.position = CGPoint(x: frame.midX + 100, y: frame.midY + 200)
+            addChild(topLbl)
+            let removeNodeAction = SKAction.removeFromParent()
+            let addAndRemove = SKAction.sequence([waitaction, removeNodeAction])
+            topLbl.run(addAndRemove)
+            
+            if bottomScore >= 7 {
+                topLbl.text = String(label3)
+                let newlabel = SKLabelNode(fontNamed: "Helvatica")
+                newlabel.text = String(next2)
+                newlabel.fontSize = 100
+                newlabel.fontColor = SKColor.white
+                newlabel.position = CGPoint(x: frame.midX, y: frame.midY)
+                addChild(newlabel)
+            }
+            //let hopeWait = SKAction.wait(forDuration: waitTime )
+            //scene!.childNode(withName: BallCategoryName)?.run(hopeWait)
+//            var danny = 0
+//            while danny<100000{
+//                danny+=1
+//                print(danny)
+//            }
+            scene!.childNode(withName: BallCategoryName)?.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        }
+        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == topCategory{
+            print("Fault on P2, P1 ball")
+            label2 += 1
+            let waitaction = SKAction.wait(forDuration:timetowait)
+            let btmLbl = SKLabelNode(fontNamed: "Helvetica")
+            btmLbl.text = String(label2)
+            btmLbl.fontSize = 65
+            btmLbl.fontColor = SKColor.white
+            btmLbl.position = CGPoint(x: frame.midX - 100, y: frame.midY - 200)
+            addChild(btmLbl)
+            let removeNodeAction = SKAction.removeFromParent()
+            let addAndRemove = SKAction.sequence([waitaction, removeNodeAction])
+                btmLbl.run(addAndRemove)
+            
+            if label2 >= 7 {
+        btmLbl.text = String(label3)
+        let newlabel = SKLabelNode(fontNamed: "Helvatica")
+        newlabel.text = String(next2)
+        newlabel.fontSize = 100
+        newlabel.fontColor = SKColor.white
+        newlabel.position = CGPoint(x: frame.midX, y: frame.midY)
+        addChild(newlabel)
+            }
+            scene!.childNode(withName: BallCategoryName)?.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+            scene!.childNode(withName: BallCategoryName)?.run(moveBall)
+            //let hopeWait = SKAction.wait(forDuration:waitTime)
+            //scene!.childNode(withName: BallCategoryName)?.run(hopeWait)
+        
+            scene!.childNode(withName: BallCategoryName)?.physicsBody?.applyImpulse(CGVector(dx: 20, dy: -20))
+    }
+    
+    
+       
+    
+        func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
         
         isFingerOnPaddle1 = false
@@ -165,12 +228,13 @@ class PongGameScene: SKScene {
         
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
     
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        func update(_ currentTime: TimeInterval) {
+         //Called before each frame is rendered
     }
+}
 }
