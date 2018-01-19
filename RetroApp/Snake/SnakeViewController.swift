@@ -3,7 +3,7 @@
 //  Snake
 //
 //  Created by Matt T on 2017-11-23.
-//  Copyright © 2017 Matthew Temniuk. All rights reserved.
+//  Copyright © 2017 Matthew Temniuk, Hunter Heibein, Aaron Herschberger, Jimmy Lu. All rights reserved.
 //
 //
 import UIKit
@@ -11,13 +11,13 @@ import Foundation
 
 
 
-
+//Aaron, Storboard design and created assets
 class SnakeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Jimmy, Aaron. Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBOutlet weak var body2: UIImageView!
@@ -103,10 +103,10 @@ class SnakeViewController: UIViewController {
     
     
     
-    
+    // Matt and Jimmy, defines what happens in what order everytime the timer runs
     @objc func timerMethod(_ timer:Timer?) {
         
-        let y = Int(snake.length)
+        //let y = Int(snake.length)
         
         var x = 1
         
@@ -403,7 +403,7 @@ class SnakeViewController: UIViewController {
             score.text = "Score: \(snake.score)"
         }
     }
-    
+    // Matt, Aaron and Jimmy, sets the starting values
     func startGame() {
         if (timer != nil) {
             return
@@ -487,7 +487,7 @@ class SnakeViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: snake.speed, target: self, selector: #selector(timerMethod(_:)) , userInfo: nil, repeats: true)
         
     }
-    
+    //Matt, stops the timer and makes the start button visible to restart the game 
     func endGame() {
         startButton!.isHidden = false
         timer!.invalidate()

@@ -3,22 +3,23 @@
 //  Snake
 //
 //  Created by Matt T on 2017-12-07.
-//  Copyright © 2017 Matthew Temniuk, Hunter Heibein, Aaron Herschberger. All rights reserved.Not Jimmy Lu
+//  Copyright © 2017 Matthew Temniuk, Hunter Heibein, Aaron Herschberger, Jimmy Lu. All rights reserved.
 //
-
+//Matt,
 import Foundation
 import UIKit
-
+//Matt, Coordinate Structures
 struct Coordinates{
     var x: Int
     var y: Int
 }
+//Matt, making sure the directions are spelled
 enum Direction{
     case up,down,left,right
 }
 
 class Snake{
-    
+    //Matt, makes class for snake with characteristics
     var isAlive:Bool = true
     var length:UInt = 0
     var oldBodyCoords: Coordinates
@@ -34,7 +35,7 @@ class Snake{
     
     
     
-    
+    //Matt, 
     init(speed:Double) {
         
         
@@ -46,7 +47,7 @@ class Snake{
         
     }
     
-    
+    //Matt, Jimmy. Moves and makes sure it can't U-turn.
     func move(Image: UIView, Body1: UIView,start: UIView) {
         var headPoint = bodyCoordinates[0]
         if direction==Direction.up{
@@ -94,6 +95,7 @@ class Snake{
         
     }
     
+    //Matt. Spawns at start of game.
     func spawn(){
         
         bodyCoordinates.removeAll()
@@ -101,6 +103,7 @@ class Snake{
         bodyCoordinates.insert(cord1, at: 0)
     }
     
+    //Jimmy. Gives an image to the body squares.
     func spawnImage(Image: UIView, length: Int, start: UIView){
         let startX = Int(start.center.x)
         let startY = Int(start.center.y)
@@ -109,15 +112,15 @@ class Snake{
     }
     
     func foodAte(Image: UIView, start: UIView, body: UIView){
-        let startX = Int(start.center.x)
-        let startY = Int(start.center.y)
-        
-        print("\(bodyCoordinates), and more....")
+//        let startX = Int(start.center.x)
+//        let startY = Int(start.center.y)
+//
         length+=1
         score+=100
         genFood(Image: Image, start:start)
         bodyCoordinates.insert(oldBodyCoords, at: bodyCoordinates.endIndex)
     }
+    //Matt, Hunter. Randomly chooses a grid place to pace the food and places the food image at that place
     func genFood(Image: UIView,start: UIView){
         var x: Int = 0
         var y: Int = 0
@@ -146,7 +149,7 @@ class Snake{
         }
         
     }
-    
+    //Matt, makes sure that the snake cannot turn 180 degrees
     func changeDirection(_ newDirection: Direction)  {
         if (direction == Direction.down || direction == Direction.up) && (newDirection == Direction.down || newDirection == Direction.up){
             
@@ -160,7 +163,7 @@ class Snake{
         }
         
     }
-    
+    // Jimmy, Checks to see if the head of the snake hit any of the body parts
     func headHitBody() -> Bool{
         let headPoint = bodyCoordinates[0]
         for bodyPoint in bodyCoordinates[1..<bodyCoordinates.count]   {
@@ -171,7 +174,7 @@ class Snake{
         }
         return false
     }
-    
+    //Matt, Makes sure the snake head is on the grid
     func headHitWall(Image: UIView) -> Bool{
         
         if Image.center.x < 64 || Image.center.x > 702 {
@@ -190,34 +193,36 @@ class Snake{
         //        }
         //        return false
     }
+    //Jimmy, resets the body images to the top left corner
     func returnImage(Image: UIView){
         Image.center.x = 0
         Image.center.y = 0
     }
-    func generateWallSnake(){
-        var wallSnake = [Coordinates](repeating: Coordinates(x: 0, y: 0), count: 75)
-        for z in 0...18{
-            var n = 0
-            wallSnake[z] = Coordinates(x: Int(21), y: Int(n))
-            n += 1
-        }
-        for z in 19...37{
-            var n = 0
-            wallSnake[z] = Coordinates(x: Int(0), y: Int(n))
-            n += 1
-        }
-        for z in 38...56{
-            var n = 0
-            wallSnake[z] = Coordinates(x: Int(n), y: Int(0))
-            n += 1
-        }
-        for z in 57...75{
-            var n = 0
-            wallSnake[z] = Coordinates(x: Int(n), y: Int(21))
-            n += 1
-        }
-    }
-    
+   
+//    func generateWallSnake(){
+//        var wallSnake = [Coordinates](repeating: Coordinates(x: 0, y: 0), count: 75)
+//        for z in 0...18{
+//            var n = 0
+//            wallSnake[z] = Coordinates(x: Int(21), y: Int(n))
+//            n += 1
+//        }
+//        for z in 19...37{
+//            var n = 0
+//            wallSnake[z] = Coordinates(x: Int(0), y: Int(n))
+//            n += 1
+//        }
+//        for z in 38...56{
+//            var n = 0
+//            wallSnake[z] = Coordinates(x: Int(n), y: Int(0))
+//            n += 1
+//        }
+//        for z in 57...75{
+//            var n = 0
+//            wallSnake[z] = Coordinates(x: Int(n), y: Int(21))
+//            n += 1
+//        }
+//    }
+//
     
     
     
