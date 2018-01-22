@@ -123,6 +123,7 @@ class PacmanGameScene: SKScene {
         }
         
         // Matt K, pacmans movement system
+        // Zach resized to fit over the map
         
         if isTouched == true {
             if touch.x >= -309 && touch.x <= -234  {
