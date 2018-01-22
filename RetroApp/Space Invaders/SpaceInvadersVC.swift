@@ -25,7 +25,6 @@ class SpaceInvadersVC: UIViewController {
         
         // Create and configure the scene.
         let scene = SpaceGameScene(size: skView.frame.size)
-           scene.scaleMode = .resizeFill
         skView.presentScene(scene)
         
         // Pause the view (and thus the game) when the app is interrupted or backgrounded
@@ -60,6 +59,7 @@ class SpaceInvadersVC: UIViewController {
         let skView = self.view as! SKView
         skView.isPaused = false
     }
+    
     
     @IBAction func back(_ sender: UIButton) {
         let nextScene: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu") as UIViewController

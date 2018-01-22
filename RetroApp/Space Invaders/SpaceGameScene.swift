@@ -28,6 +28,21 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
     let kShipCategory: UInt32 = 0x1 << 2
     let kSceneEdgeCategory: UInt32 = 0x1 << 3
     let kInvaderFiredBulletCategory: UInt32 = 0x1 << 4
+    var Heart1 = SKSpriteNode(imageNamed: "Heart.png")
+    let kHeart1Size = CGSize(width: 12, height: 12)
+    let kHeart1Name = "Heart1"
+    var Heart2 = SKSpriteNode(imageNamed: "Heart.png")
+    let kHeart2Size = CGSize(width: 12, height: 12)
+    let kHeart2Name = "Heart2"
+    let Heart3 = SKSpriteNode(imageNamed: "Heart.png")
+    let kHeart3Size = CGSize(width: 12, height: 12)
+    let kHeart3Name = "Heart3"
+    
+    
+    
+    
+    
+    
     
     enum BulletType {
         case shipFired
@@ -132,9 +147,9 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
         setupInvaders()
         setupShip()
         setupHud()
-        
-        
-        
+        setupHeart3()
+        setupHeart2()
+        setupHeart1()
         
         // black space color
         self.backgroundColor = SKColor.black
@@ -253,6 +268,7 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
         return ship
     }
     
+    
     func setupHud() {
         // 1
         let scoreLabel = SKLabelNode(fontNamed: "Courier")
@@ -269,22 +285,25 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
             y: size.height - (40 + scoreLabel.frame.size.height/2)
         )
         addChild(scoreLabel)
+        /*                ******TAKEN OUT THE HEALTH BAR IN THE HUD******
+         // 4
+         let healthLabel = SKLabelNode(fontNamed: "Courier")
+         healthLabel.name = kHealthHudName
+         healthLabel.fontSize = 25
+         
+         // 5
+         healthLabel.fontColor = SKColor.red
+         healthLabel.text = String(format: "Health: %.1f%%", shipHealth * 100.0)
+         
+         // 6
+         healthLabel.position = CGPoint(
+         x: frame.size.width / 2,
+         y: size.height - (80 + healthLabel.frame.size.height/2)
+         )
+         addChild(healthLabel)
+         */
         
-        // 4
-        let healthLabel = SKLabelNode(fontNamed: "Courier")
-        healthLabel.name = kHealthHudName
-        healthLabel.fontSize = 25
         
-        // 5
-        healthLabel.fontColor = SKColor.red
-        healthLabel.text = String(format: "Health: %.1f%%", shipHealth * 100.0)
-        
-        // 6
-        healthLabel.position = CGPoint(
-            x: frame.size.width / 2,
-            y: size.height - (80 + healthLabel.frame.size.height/2)
-        )
-        addChild(healthLabel)
     }
     func adjustScore(by points: Int) {
         score += points
@@ -302,6 +321,33 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
             health.text = String(format: "Health: %.1f%%", self.shipHealth * 100)
         }
     }
+    
+    //                                 ***********************SET UP THE HEARTS*************************
+    // *** Heart Number #1 ***
+    func setupHeart1(){
+        
+        Heart1.name = kHeart1Name
+        Heart1.position = CGPoint(x: size.width / 1.75, y: kHeart1Size.height * 39.0)
+        addChild(Heart1)
+    }
+    
+    // *** Heart Number #2 ***
+    func setupHeart2(){
+        Heart2.name = kHeart2Name
+        Heart2.position = CGPoint(x: size.width / 2.0, y: kHeart2Size.height * 39.0)
+        addChild(Heart2)
+    }
+    
+    // *** Heart Number #3 ***
+    func setupHeart3(){
+        Heart3.name = kHeart3Name
+        Heart3.position = CGPoint(x: size.width / 2.355, y: kHeart3Size.height * 39.0)
+        addChild(Heart3)
+    }
+    
+    
+    
+    
     
     // Scene Update
     
@@ -574,6 +620,16 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
             // 1
             adjustShipHealth(by: -0.334)
             
+            if shipHealth == 1{
+                
+            } else if shipHealth < 1 && shipHealth > 0.5{
+                Heart1.removeFromParent()
+            } else if shipHealth < 0.5 && shipHealth > 0{
+                Heart2.removeFromParent()
+            } else if shipHealth == 0{
+                Heart3.removeFromParent()
+            }
+            
             if shipHealth <= 0.0 {
                 // 2
                 contact.bodyA.node!.removeFromParent()
@@ -641,5 +697,4 @@ class SpaceGameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     // Game End Helpers
-    
 }

@@ -18,6 +18,8 @@
 		03E27B282006516A0043867A /* scoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B1F2006516A0043867A /* scoreViewController.swift */; };
 		03E27B292006516A0043867A /* GauntletGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 03E27B202006516A0043867A /* GauntletGameScene.sks */; };
 		03E27B2A2006516A0043867A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E27B212006516A0043867A /* GameViewController.swift */; };
+		6B489D5D20161E710027802E /* Heartss.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B489D5C20161E710027802E /* Heartss.png */; };
+		6B489D5F20161E830027802E /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B489D5E20161E830027802E /* Heart.png */; };
 		6B676E661FEBEEA8005C0462 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E651FEBEEA8005C0462 /* GameOverScene.swift */; };
 		6B676E681FEBEEF2005C0462 /* SpaceGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B676E671FEBEEF2005C0462 /* SpaceGameScene.swift */; };
 		8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C03112004FAAA00A4D87A /* Actions.sks */; };
@@ -81,6 +83,8 @@
 		03E27B202006516A0043867A /* GauntletGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GauntletGameScene.sks; sourceTree = "<group>"; };
 		03E27B212006516A0043867A /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		03E27B2B200651DF0043867A /* Gauntlet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gauntlet.storyboard; sourceTree = "<group>"; };
+		6B489D5C20161E710027802E /* Heartss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Heartss.png; path = "../../../../../Desktop/Hearts for Space Invaders/Heartss.png"; sourceTree = "<group>"; };
+		6B489D5E20161E830027802E /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Heart.png; path = "../../../../../Desktop/Hearts for Space Invaders/Heart.png"; sourceTree = "<group>"; };
 		6B676E651FEBEEA8005C0462 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		6B676E671FEBEEF2005C0462 /* SpaceGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceGameScene.swift; sourceTree = "<group>"; };
 		8A2C03112004FAAA00A4D87A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -258,7 +262,9 @@
 			isa = PBXGroup;
 			children = (
 				B33489531FE16AE40098E8F1 /* SpaceInvaders.storyboard */,
+				6B489D5C20161E710027802E /* Heartss.png */,
 				B33489551FE16AFD0098E8F1 /* SpaceInvadersVC.swift */,
+				6B489D5E20161E830027802E /* Heart.png */,
 				6B676E671FEBEEF2005C0462 /* SpaceGameScene.swift */,
 				6B676E651FEBEEA8005C0462 /* GameOverScene.swift */,
 			);
@@ -375,10 +381,12 @@
 				8A2C03122004FAAA00A4D87A /* Actions.sks in Resources */,
 				B334892C1FE166FF0098E8F1 /* Assets.xcassets in Resources */,
 				B33489581FE16B100098E8F1 /* Pacman.storyboard in Resources */,
+				6B489D5F20161E830027802E /* Heart.png in Resources */,
 				03E27B272006516A0043867A /* Actions.sks in Resources */,
 				03E27B172006513A0043867A /* Images in Resources */,
 				B334892A1FE166FF0098E8F1 /* Main.storyboard in Resources */,
 				B3439B542007A53D0055E70F /* PacmanGameScene.sks in Resources */,
+				6B489D5D20161E710027802E /* Heartss.png in Resources */,
 				B334894A1FE16A7C0098E8F1 /* PlayerProfile.storyboard in Resources */,
 				B33489541FE16AE40098E8F1 /* SpaceInvaders.storyboard in Resources */,
 				8A2C03192004FB2500A4D87A /* TitleScene.sks in Resources */,

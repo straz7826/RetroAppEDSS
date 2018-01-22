@@ -70,5 +70,5 @@ class GameOverScene: SKScene {
         
         self.view?.presentScene(gameScene, transition: SKTransition.doorsCloseHorizontal(withDuration: 1.0))
         
-}
+    }
 }
