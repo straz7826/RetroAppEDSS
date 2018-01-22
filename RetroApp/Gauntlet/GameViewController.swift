@@ -1,8 +1,6 @@
 //
-//  GameViewController.swift
-//  Test Gauntlet
-//
-//  Created by Corinne H on 2017-11-24.
+//  GameViewController.swift - AC
+//  Schedules a timer that shows the in game time every second.
 //  Copyright © 2017 NFB. All rights reserved.
 //
 
@@ -12,15 +10,16 @@ import GameplayKit
 import Foundation
 
 class GameViewController: UIViewController {
-
+    
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var endGameButton: UIButton!
     
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Game timer
         gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.counter), userInfo: nil, repeats: true)
         
         if let view = self.view as! SKView? {
@@ -38,11 +37,11 @@ class GameViewController: UIViewController {
         }
         
     }
-
+    
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -50,20 +49,23 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
+    //Counter - AC
+    //Counts down seconds for the timer. Stops the timer when seconds == 0.
     @objc func counter() {
         seconds -= 1
         
         if seconds <= 0 {
+            moveCharacter = false
             gameTimer.invalidate()
             endGameButton.isHidden = false
         }
@@ -73,6 +75,3 @@ class GameViewController: UIViewController {
     
 }
 
-/*func end() {
-    endGameButton.isHidden = false
-}*/
