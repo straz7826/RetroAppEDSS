@@ -111,6 +111,7 @@ class Snake{
         Image.center.y = CGFloat(startY - 32 * (bodyCoordinates[Int(length)].y - 1))
     }
     
+    //Matt, Once the food is ate to call the function to generate a new food, increase score and put the new tail at the previous tail position
     func foodAte(Image: UIView, start: UIView, body: UIView){
 //        let startX = Int(start.center.x)
 //        let startY = Int(start.center.y)
@@ -120,7 +121,7 @@ class Snake{
         genFood(Image: Image, start:start)
         bodyCoordinates.insert(oldBodyCoords, at: bodyCoordinates.endIndex)
     }
-    //Matt, Hunter. Randomly chooses a grid place to pace the food and places the food image at that place
+    //Matt, Hunter. Randomly chooses a grid place to place the food and places the food image at that place
     func genFood(Image: UIView,start: UIView){
         var x: Int = 0
         var y: Int = 0
