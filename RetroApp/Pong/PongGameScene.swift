@@ -23,32 +23,36 @@ var btmLbl = SKLabelNode()
 let standard = CGPoint(x: 0, y: 0)
 let timetowait:TimeInterval = 2.0
 var topScore = 0
-var bottomScore = 1
-var label1 = 0
+//var bottomScore = 1
+var label1 = -1
 var label2 = 0
 var label4 = 0
 var label3 = "You Win!"
 var next2 = "Game Over"
+var next23 = "Game Over"
 
 class PongGameScene: SKScene, SKPhysicsContactDelegate {
-    
+     let moveBall = SKAction.move(to: standard, duration: 0.0) //Palmer's action
+    //ashley's variables
     var isFingerOnPaddle1 = false
     var isFingerOnPaddle2 = false
     
     override func didMove(to view: SKView) {
         super.didMove(to: view) //need
-        
+    //Devin Code Starts
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
+        
         border.friction = 0
         self.physicsBody = border
-        
+        // Devin Code End
+        //Palmer Code start
         physicsWorld.gravity = CGVector(dx: 0.0, dy: 0.0)
         physicsWorld.contactDelegate = self
         let ball = childNode(withName: BallCategoryName) as! SKSpriteNode
 
         ball.physicsBody?.categoryBitMask = BallCategory
         ball.position = CGPoint(x: 0, y: 0)
-        ball.physicsBody?.applyImpulse(CGVector(dx: 20.0, dy: -20.0))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 50.0, dy: -50.0))
         
         //setting top and bottom
         let hopeful = CGRect(x: -400 , y: 480 , width: 800 , height: -1)
@@ -70,7 +74,7 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
         ball.physicsBody?.contactTestBitMask = bottom.physicsBody!.collisionBitMask
         
     }
-    
+    //Palmer Code Ends
     func touchDown(atPoint pos : CGPoint) {}
     
     func touchMoved(toPoint pos : CGPoint) {}
@@ -83,6 +87,7 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
         let touch = touches.first
         let touchLocation = touch!.location(in: self)
         
+        //Ashley's code to recognize when the paddles are touched
         if let body = physicsWorld.body(at: touchLocation) {
             if body.node!.name == "paddle1" {
                 print("Began touch on paddle1")
@@ -97,7 +102,7 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-        
+      //ashley's. Makes paddles move
         if isFingerOnPaddle1 {
             let touch = touches.first
             let touchLocation = touch!.location(in: self)
@@ -131,8 +136,9 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    let moveBall = SKAction.move(to: standard, duration: 0.0)
+   
     //contacts
+    //Palmer Starts
     func didBegin(_ contact: SKPhysicsContact) {
         print("AHHHHHH")
         var firstBody: SKPhysicsBody
@@ -156,11 +162,13 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
             print("Fault on P1, P2 ball")
              scene!.childNode(withName: BallCategoryName)?.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
             scene!.childNode(withName: BallCategoryName)?.run(moveBall)
-             bottomScore += 1
+            //Palmer Ends
+            // Devin Code Start
+            label1 += 1
             let waitaction = SKAction.wait(forDuration:timetowait)
             let topLbl = SKLabelNode(fontNamed: "Helvetica")
-            topLbl.text = String(label4)
-        topLbl.fontSize = 65
+            topLbl.text = String(label1)
+            topLbl.fontSize = 65
             topLbl.fontColor = SKColor.white
             topLbl.position = CGPoint(x: frame.midX + 100, y: frame.midY + 200)
             addChild(topLbl)
@@ -168,7 +176,7 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
             let addAndRemove = SKAction.sequence([waitaction, removeNodeAction])
             topLbl.run(addAndRemove)
             
-            if bottomScore >= 7 {
+            if label1 >= 7 {
                 topLbl.text = String(label3)
                 let newlabel = SKLabelNode(fontNamed: "Helvatica")
                 newlabel.text = String(next2)
@@ -177,14 +185,8 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
                 newlabel.position = CGPoint(x: frame.midX, y: frame.midY)
                 addChild(newlabel)
             }
-            //let hopeWait = SKAction.wait(forDuration: waitTime )
-            //scene!.childNode(withName: BallCategoryName)?.run(hopeWait)
-//            var danny = 0
-//            while danny<100000{
-//                danny+=1
-//                print(danny)
-//            }
-            scene!.childNode(withName: BallCategoryName)?.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+           
+            scene!.childNode(withName: BallCategoryName)?.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20)) //Palmer's
         }
         if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == topCategory{
             print("Fault on P2, P1 ball")
@@ -202,27 +204,25 @@ class PongGameScene: SKScene, SKPhysicsContactDelegate {
             
             if label2 >= 7 {
         btmLbl.text = String(label3)
-        let newlabel = SKLabelNode(fontNamed: "Helvatica")
-        newlabel.text = String(next2)
-        newlabel.fontSize = 100
-        newlabel.fontColor = SKColor.white
-        newlabel.position = CGPoint(x: frame.midX, y: frame.midY)
-        addChild(newlabel)
+        let newlabel2 = SKLabelNode(fontNamed: "Helvatica")
+        newlabel2.text = String(next23)
+        newlabel2.fontSize = 100
+        newlabel2.fontColor = SKColor.white
+        newlabel2.position = CGPoint(x: frame.midX, y: frame.midY)
+        addChild(newlabel2)
+          // Devin Code End
             }
+            //Palmer's
             scene!.childNode(withName: BallCategoryName)?.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
             scene!.childNode(withName: BallCategoryName)?.run(moveBall)
-            //let hopeWait = SKAction.wait(forDuration:waitTime)
-            //scene!.childNode(withName: BallCategoryName)?.run(hopeWait)
+            
         
             scene!.childNode(withName: BallCategoryName)?.physicsBody?.applyImpulse(CGVector(dx: 20, dy: -20))
-    }
-    
-    
-       
+    } //Palmer's end
     
         func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-        
+        //Ashley's stops movement of paddles
         isFingerOnPaddle1 = false
         isFingerOnPaddle2 = false
         
