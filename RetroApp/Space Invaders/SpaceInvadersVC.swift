@@ -24,13 +24,15 @@ class SpaceInvadersVC: UIViewController {
         skView.ignoresSiblingOrder = true
         
         // Create and configure the scene.
-        let scene = SpaceGameScene(size: skView.frame.size)
+    let scene = SpaceGameScene(size: skView.frame.size)
         skView.presentScene(scene)
         
         // Pause the view (and thus the game) when the app is interrupted or backgrounded
         NotificationCenter.default.addObserver(self, selector: #selector(SpaceInvadersVC.handleApplicationWillResignActive(_:)), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(SpaceInvadersVC.handleApplicationDidBecomeActive(_:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        
+        
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -62,12 +64,15 @@ class SpaceInvadersVC: UIViewController {
     
     
     @IBAction func back(_ sender: UIButton) {
+        let skView = self.view as! SKView
+        skView.isPaused = true
+        
         let nextScene: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu") as UIViewController
         self.present(nextScene, animated: false, completion: nil)
     }
     
     
-    
+
     
     
 }

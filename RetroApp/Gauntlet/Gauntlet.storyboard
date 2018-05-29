@@ -668,9 +668,10 @@
         <image name="keyWallBasic" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="i1M-XV-kcO"/>
         <segue reference="Xlh-go-Rxo"/>
-        <segue reference="ZZG-cP-hFo"/>
+        <segue reference="h2o-6d-Bpd"/>
         <segue reference="09I-ZW-fsx"/>
-        <segue reference="N8w-dt-ON9"/>
+        <segue reference="Xrn-Xg-R9d"/>
     </inferredMetricsTieBreakers>
 </document>

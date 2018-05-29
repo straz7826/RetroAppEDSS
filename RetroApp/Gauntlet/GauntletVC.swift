@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class GauntletVC: UIViewController {
     
     override func viewDidLoad() {
@@ -17,6 +18,8 @@ class GauntletVC: UIViewController {
     }
     
     @IBAction func back(_ sender: UIButton) {
+       
+        
         let nextScene: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu") as UIViewController
         self.present(nextScene, animated: false, completion: nil)
     }

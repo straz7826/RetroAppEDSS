@@ -27,6 +27,7 @@ class scoreViewController: UIViewController {
     //Resets the game and stops the music when button is pressed
     @IBAction func buttonPressed(_ sender: Any) {
         resetGame()
+      
 //        stopMusic()
     }
     

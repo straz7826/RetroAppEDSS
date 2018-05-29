@@ -67,6 +67,8 @@ class GameViewController: UIViewController {
         if seconds <= 0 {
             moveCharacter = false
             gameTimer.invalidate()
+            let skView = view as! SKView
+            skView.isPaused = true
             endGameButton.isHidden = false
         }
         

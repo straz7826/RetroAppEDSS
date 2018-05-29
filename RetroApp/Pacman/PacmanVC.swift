@@ -26,6 +26,9 @@ class PacmanVC: UIViewController {
     }
     
     @IBAction func back(_ sender: UIButton) {
+        let skView = view as! SKView
+        skView.isPaused = true
+        
         let nextScene: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu") as UIViewController
         self.present(nextScene, animated: false, completion: nil)
     }
